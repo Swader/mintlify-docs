@@ -1,0 +1,212 @@
+---
+title: "Money Legos"
+description: "Catalog of Katana's core DeFi building blocks with practical integration guidance"
+---
+
+## Katana Money Legos
+
+This catalog lists the core products, apps, and protocols available on Katana.
+
+<Info> For addresses and ABIs, visit the Contract Directory at
+[contracts.katana.tools](https://contracts.katana.tools). </Info>
+
+### AUSD (Agora USD) - Native Yield-Enabled Stable
+
+AUSD is the ecosystem-native stable asset designed to be the settlement and
+liquidity base on Katana.
+
+- Deep on-chain usage; primary quote asset for trading and lending
+- Can route sustainable yield and incentives back to users and markets
+- Acts as the preferred unit of account for apps and reporting
+
+Integrate when…
+- You need stable collateral or a borrowable base asset
+- You want to denominate PnL, fees, and payouts consistently
+- You’re designing incentives that recycle organic network revenue
+
+Learn more about AUSD [here](https://www.agora.finance/).
+
+### Vault Bridge - Productive Bridged Assets
+Bridged assets are productive by design. Users hold representations on Katana while origin-chain assets sit in yield-bearing vaults.
+
+- Origin-side vault tokens: vbETH, vbUSDC, vbUSDS, vbUSDT, vbWBTC
+- Katana-side bridged tokens: bvbETH (WETH interface), bvbUSDC, bvbUSDS, bvbUSDT, bvbWBTC
+- Native converters: WETH Native Converter, USDC/USDS/USDT/WBTC Converters
+
+Integrate when…
+- You want balances to earn while bridged, visible in wallets/dashboards
+- You’re building LP strategies financed by origin-side vault yield
+- You need safer “parking” assets across intent/cross-chain workflows
+- You want access to the Katana flywheel, and benefit from the Chain Owned Liquidity
+
+### SushiSwap v3 - Concentrated Liquidity Spot DEX
+Capital-efficient AMM with price ranges and NFT positions. Canonical venue for spot trading and routing on Katana.
+
+- Router, V3 Position Manager, and Factory for LP automation
+- Custom fee tiers and active-liquidity strategies
+- Position NFTs compatible with advanced tooling
+
+Integrate when…
+- You need swaps, LP, and routing in one stack
+- You’re building auto-rebalancing LP or range-order vaults
+- You want on-chain limit orders, TWAP, and best-execution routing
+
+### Morpho Blue - Isolated Lending Markets
+Permissionless isolated markets where each pool has its own oracle and rate model. Risk is siloed per market.
+
+- Supply/borrow assets with per-market risk isolation
+- Custom IRMs and oracle choices per market
+- Composable with vaults and allocators
+
+Integrate when…
+- You need safe leverage for LP positions or structured products
+- You want “borrow against portfolio” UX
+- You’re building strategies that source low/variable cost of capital
+
+### MetaMorpho & Yearn - ERC-4626 Yield Vaults
+Tokenized vaults aggregating strategies across markets.
+
+- MetaMorpho vaults: programmable/public allocators over Morpho markets
+- Yearn vaults: curated strategies (e.g., AUSD, WETH)
+- Shares work as yield-bearing base or collateral
+
+Integrate when…
+- You want a simple “deposit and earn” UX
+- You’re building smart treasuries that auto-rebalance
+- You need a yield-bearing collateral for products
+
+### Price Oracles - Chainlink and RedStone
+Robust price feeds for majors and ecosystem assets.
+
+- Chainlink: AUSD, BTC, ETH, LST/LRT, and more
+- RedStone: BTC, ETH, weETH, wstETH, SUI, XRP, etc.
+- Standard interfaces for lending, vaults, perps bounds, and NAV
+
+Integrate when…
+- You enforce collateral safety and liquidation thresholds
+- You compute NAV or risk for portfolios
+- You set price bands for swaps and vault entries
+
+### Gnosis Safe + Tools - Multisig & Safe Operations
+Battle-tested multisig, L2-optimized variants, and batch execution helpers.
+
+- Safe multisig for admin and treasury operations
+- MultiSend and MultiSendCallOnly for batch execution
+- Safe execution patterns for secure ops
+
+Integrate when…
+- You’re launching a protocol with staged permissions
+- You need one-click batch actions for ops teams
+- You’re building DAO front-ends and pay-runs
+
+### Deterministic Deployment - CreateX & Deterministic Deployment Proxy
+Deploy with predictable addresses (CREATE/CREATE2/CREATE3) for cross-chain coherence and simpler integrations.
+
+- CreateX (CREATE/2/3), DeterministicDeploymentProxy, Create2Deployer
+- Precompute addresses for factories and routers
+- Improves indexing, intent UX, and audits
+
+Integrate when…
+- You need pre-known addresses for intents or account links
+- You deploy per-user vaults/routers with deterministic lookups
+- You ship factory UIs that precompute addresses
+
+### Agglayer - Bridge & Coordination Layer
+The interoperability layer that connects Katana with other chains, enabling message passing, exits, and cross-chain asset flows.
+
+- Bridge L2 Sovereign Chain, Global Exit Root Manager
+- Polygon zkEVM Deployer, Timelock, ProxyAdmin, Bridge Extensions
+- Origin/destination address awareness for assets
+
+Integrate when…
+- You build cross-chain apps with unified UX
+- You want “deposit here, trade there” intent flows
+- You synchronize state or settlement across chains
+
+### Native Converters - Wrapping/Unwrapping Helpers
+Standardized conversion UX between native and wrapped/bridged forms.
+
+- ETH↔bvbETH (WETH interface), USDC/USDS/USDT/WBTC converters
+- Safer, consistent flows for user operations
+- Reduce user error and improve automation
+
+Integrate when…
+- You want one-click wrap/unwrap in portfolio/trade screens
+- You auto-convert for gas or strategy entry
+- You unify asset displays across representations
+
+### Multicall3 & Bundler3 - Batching & Bundling
+Batch reads and safely bundle multi-step state changes into single actions.
+
+- Dashboards with fewer RPC round trips
+- Atomic multi-step operations
+- Reentrancy-safe callbacks for advanced routers
+
+Integrate when…
+- You build “review & execute” wizards
+- You want single-click strategy entry/exit
+- You need sub-second dashboards over many contracts
+
+### Permit2 - Approvals & Signature Flows
+Gas-optimized approvals and transfers via off-chain signatures.
+
+- Spend authorizations without wasteful on-chain approves
+- Batch approvals across protocols
+- Cleaner UX for swaps, vault deposits, and loans
+
+Integrate when…
+- You design first-transaction experiences
+- You batch multiple protocol actions in one tx
+- You want safer allowance lifecycles and expirations
+
+### ERC-4337 - Account Abstraction Stack
+Programmable accounts with paymasters/sponsorship, session keys, and recovery.
+
+- EntryPoint (v0.6/v0.7) and SenderCreator
+- Social recovery and device/session policies
+- App-specific spend controls
+
+Integrate when…
+- You want web2-like onboarding and gasless actions
+- You ship mobile experiences with session keys
+- You implement enterprise or family spend policies
+
+### RIP-7212 - R1 Signature Verification (secp256r1)
+Device-grade signature verification (e.g., Secure Enclave, WebAuthn) via precompile.
+
+- Passwordless wallet login and approvals
+- Device-bound attestations for sensitive flows
+- Bridges common consumer hardware to crypto UX
+
+Integrate when…
+- You need WebAuthn login to a smart account
+- You want device-gated approvals
+- You build enterprise-grade key policies
+
+### Seaport + Conduit and other NFT Market Primitives
+Advanced marketplace with efficient transfer conduits and rich order types.
+
+- Criteria-based orders, bulk operations, and secure transfer paths
+- Catalog and rendering utilities for dynamic NFTs (ERC6220) and other [RMRK standards](https://evm.rmrk.app)
+- Efficient batch updates for attributes
+
+Integrate when…
+- You build creator storefronts or pro trading tools
+- You need composable traits and dynamic metadata
+- You orchestrate gaming assets with updatable attributes
+
+### Token Set - Ecosystem Assets
+Common tokens supported across Katana, vaults, and markets.
+
+- BTC/collateralized: BTCK, LBTC, WBTC; ETH: weETH, wstETH, WETH (bvbETH)
+- Ecosystem: AUSD, POL, SUSHI, MORPHO, YFI, JitoSOL, uBTC/uSOL/uSUI/uXRP
+- Network: IKAT
+
+Integrate when…
+- You design broad market dashboards and routers
+- You build diversified yield strategies and baskets
+- You support multi-asset collateral with clear risk
+
+---
+
+Interested in putting these legos together? Check out [What to Build](/what-to-build) for some build ideas.

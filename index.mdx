@@ -1,97 +1,157 @@
 ---
 title: "Introduction"
-description: "Welcome to the new home for your documentation"
+description: "Katana Superdocs – the builder‑first manual for a DeFi‑native L2"
 ---
 
-## Setting up
+# Katana Superdocs
 
-Get your documentation site up and running in minutes.
+> **Katana** is a purpose‑built sector-specific chain for DeFi - a Layer‑2 that speaks standard EVM but ships with native yield primitives (WETH, AUSD), deep liquidity concentrated in a few focused app and protocols, an incentive engine (KAT), and seamless cross‑rollup connectivity via [AggLayer](https://agglayer.dev).  
+> These docs are designed for **doers**: the hackers, quants, tinkerers,and protocol engineers who want to ship, not read.
+
+---
+
+## Why “Superdocs”?
+
+* **Chat‑first** – every page can be interrogated through the on‑page AI assistant, or loaded into your LLM tools.  
+* **Live code** – forkable demos, local scripts, playgrounds, contract references, and more.
+* **Personalization** – sign‑in with any EVM wallet to bookmark, vote, and open inline discussions.
+
+---
+
+## 🚀 Quickstart
 
 <Card
-  title="Start here"
+  title="Three‑step guide"
   icon="rocket"
   href="/quickstart"
   horizontal
 >
-  Follow our three step quickstart guide.
+  Spin up a local node, bridge test assets, deploy your first contract.
 </Card>
 
-## Make it yours
+---
 
-Design a docs site that looks great and empowers your users.
-
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
-
-## Create beautiful pages
-
-Everything you need to create world-class documentation.
+## Build on Katana
 
 <Columns cols={2}>
+
   <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
+    title="Primitives cookbook"
+    icon="flask"
+    href="/build/primitives"
   >
-    Use MDX to style your docs pages.
+    Code recipes for WETH, AUSD, and Stake‑the‑Bridge.
   </Card>
+
   <Card
-    title="Code samples"
+    title="Cross‑rollup calls"
+    icon="arrows-spin"
+    href="/build/bridge-and-call"
+  >
+    Use `bridgeAndCall()` to compose liquidity across AggLayer chains.
+  </Card>
+
+  <Card
+    title="Full‑stack demos"
     icon="code"
-    href="/essentials/code"
+    href="/demos"
   >
-    Add sample code to demonstrate how to use your product.
+    Forkable examples: token launcher, OTC contract, privy UI, and more.
   </Card>
+
   <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
+    title="Local scripts"
+    icon="terminal"
+    href="/tooling/scripts"
   >
-    Display images and other media.
+    Foundry & Hardhat helpers with a pre‑forked Katana state.
   </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
+
 </Columns>
 
-## Need inspiration?
+---
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+## Reference & Tooling
+
+<Columns cols={2}>
+
+  <Card
+    title="RPC & chain params"
+    icon="plug"
+    href="/reference/rpc"
+  >
+    Endpoints, chain ID, and gas benchmarks.
+  </Card>
+
+  <Card
+    title="Contract directory"
+    icon="list"
+    href="/reference/contracts"
+  >
+    Verified ABIs for core and community projects.
+  </Card>
+
+  <Card
+    title="REST / GraphQL / Substreams"
+    icon="diagram-project"
+    href="/reference/indexing"
+  >
+    Index Katana data the way you like it.
+  </Card>
+
+  <Card
+    title="AI‑ready API"
+    icon="robot"
+    href="/reference/ai-endpoints"
+  >
+    Machine‑parsable endpoints for ChatGPT, Copilot, Agentic bots.
+  </Card>
+
+</Columns>
+
+---
+
+## Contribute & Collaborate
+
+<Columns cols={2}>
+
+  <Card
+    title="Inline comments"
+    icon="comments"
+    href="/community/sidebar"
+  >
+    Highlight any line, drop a suggestion – no PR required.
+  </Card>
+
+  <Card
+    title="GitHub workflow"
+    icon="github"
+    href="/community/contribute"
+  >
+    Open a PR, link your wallet, climb the contributor leaderboard.
+  </Card>
+
+  <Card
+    title="Stack Overflow Blitz"
+    icon="stack-overflow"
+    href="https://stackoverflow.com/questions/tagged/katana"
+  >
+    Tag questions with <code>katana</code> – earn karma and KAT rewards.
+  </Card>
+
+  <Card
+    title="Roadmap voting"
+    icon="thumbs-up"
+    href="/community/wishlist"
+  >
+    Spend your on‑chain votes on features that unblock you.
+  </Card>
+
+</Columns>
+
+
+---
+
+**Build something un‑forkable.** 
+
+If you hit friction, highlight the line and tell us – the docs (and the chain) will evolve in real time.

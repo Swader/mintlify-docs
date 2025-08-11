@@ -1,80 +1,315 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Set up the Katana Development Starter Kit and start building with DeFi money legos"
 ---
 
 ## Get started in three steps
 
-Get your documentation site running locally and make your first customization.
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/PIkFVPK8P8k?si=9IPaH1jFaYtaAPUU"
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Step 1: Set up your local environment
+This quickstart will help you set up and use the Katana Development Starter Kit for building applications on Katana and its testnets, Tatara and Bokuto. You'll learn how to:
+
+- Set up your **development environment** with the Katana toolchain
+- Run a **local fork** of Katana mainnet for testing without spending real tokens
+- Explore Katana's **"money legos"** - composable financial building blocks
+
+<Warning>
+**Note**: Tatara will eventually be deprecated. It is recommended to use Bokuto as the testnet, or to use a local fork of Katana's mainnet, as will be described in the content below.
+</Warning>
+
+## Before you begin
+
+Before you start building on Katana, make sure you have the required tools and access:
 
 <AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
+<Accordion icon="check" title="Prerequisites checklist">
+  - **Bun**: [Install](https://bun.sh/docs/installation) for a fast JavaScript runtime and package manager
+  - **Foundry**: [Install](https://book.getfoundry.sh/getting-started/installation) toolkit for Ethereum application development
+  - **Git**: Version control system
+  - **MetaMask or compatible wallet**: For connecting to networks
+</Accordion>
 </AccordionGroup>
 
-### Step 2: Deploy your changes
+## Step 1: Clone the kit
+<Steps>
+<Step title="Clone the Katana Starter Kit">
+  Get the official Katana development repository:
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+  ```sh
+  git clone https://github.com/katana-network/specialk
+  cd specialk
+  ```
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+  <Info>
+  The "specialk" repository contains the complete Katana Development Starter Kit with interfaces, examples, and tooling.
+  </Info>
+</Step>
+</Steps>
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+## Step 2: Configure your environment
 
-### Step 3: Go live
+<Steps>
+<Step title="Set up environment variables">
+  Create your environment configuration:
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+  ```sh
+  cp .env.example .env
+  ```
 
-## Next steps
+  Edit `.env` to add your RPC endpoints, if desired (optional for local development).
 
-Now that you have your docs running, explore these key features:
+  <Info>
+  For local fork development, you don't need to configure any RPC endpoints as you'll be using a local Anvil fork.
+  </Info>
+</Step>
+
+<Step title="Install dependencies">
+  Install all project dependencies:
+
+  ```sh
+  bun install
+  ```
+
+  <Check>
+  Dependencies installed successfully when you see no error messages
+  </Check>
+</Step>
+</Steps>
+
+## Step 3: Run local development setup
+
+To develop locally without spending real tokens, you can run a local fork of the testnets or the mainnet. This will make a local copy of the chain in a few seconds, running the real state but also providing you with infinite ETH on any of the open test-addresses provided by Foundry's Anvil.
+
+This is the **recommended approach** to develop on Katana - it keeps state local and prevents RPC rate limits, while letting you play with the real state of Katana's live mainnet.
+
+<Steps>
+<Step title="Start Anvil fork (Terminal 1)">
+  Run a local fork of Katana mainnet:
+
+  ```sh
+  bun run start:anvil katana
+  ```
+
+  <Info>
+  This command starts a local fork of Katana mainnet using Anvil. Keep this terminal running during development.
+  </Info>
+
+  ![Anvil fork running](/images/anvil_start.png)
+</Step>
+
+<Step title="Verify the fork (Terminal 2)">
+  In a new terminal, verify your local fork is working:
+
+  ```sh
+  bun run verify:anvil
+  ```
+
+  <Check>
+  If verification passes, your local Katana fork is ready for development
+  </Check>
+
+  ![Anvil fork verified](/images/anvil_verify.png)
+</Step>
+
+<Step title="Connect your wallet">
+  Add the local network to MetaMask or your preferred wallet:
+
+  ```json Network Configuration
+  {
+    "networkName": "Katana Local Fork",
+    "rpcUrl": "http://localhost:8545",
+    "chainId": 747474,
+    "currencySymbol": "ETH"
+  }
+  ```
+
+  <Tip>
+  You can now interact with Katana contracts locally without spending real tokens. You'll have access to infinite ETH on Foundry's test addresses.
+  </Tip>
+</Step>
+</Steps>
+
+## Explore the starter kit
+
+<Steps>
+<Step title="Build the example app">
+  Compile the starter kit application:
+
+  ```sh
+  bun run build:all
+  ```
+
+  This command will:
+  - Compile your TypeScript code into `dist`
+  - Copy static assets like HTML, CSS, and images
+  - Build the ABIs, the MCP server, and more utilities to bootstrap your environment
+
+  <Info>
+  For subsequent builds, you can use `bun run build` to rebuild only the app
+  </Info>
+</Step>
+
+<Step title="Serve the application">
+  Make sure your local fork is running (Terminal 1) and serve the compiled web app:
+
+  ```sh
+  bun run dev
+  ```
+
+  <Check>
+  Open your browser to the provided localhost URL to see the Katana starter app running
+  </Check>
+
+  ![Demo app running in terminal](/images/run_dev.png)
+  ![Local dapp running](/images/app.png)
+</Step>
+
+<Step title="Explore the money legos">
+  Browse the comprehensive interfaces for Katana's financial building blocks:
+
+  <Tabs>
+  <Tab title="Local Files">
+    Browse the `contracts` directory in your cloned repository to see all available contracts and their descriptions.
+  </Tab>
+  <Tab title="Contract Directory UI">
+    Visit the [Katana Contract Directory UI](https://contracts.katana.tools) for a more readable interface browser.
+  </Tab>
+  </Tabs>
+</Step>
+</Steps>
+
+## What's next?
+
+<Info>
+You now have a complete Katana development environment! Here's how to continue building with DeFi money legos.
+</Info>
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card title="Explore example code" icon="code" href="https://github.com/katana-network/specialk">
+  Study how the starter app interacts with Katana's financial primitives
 </Card>
 
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
+<Card title="Browse money legos" icon="building-columns" href="https://contracts.katana.tools">
+  Discover available contracts and composable financial building blocks
 </Card>
 
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
+<Card title="Awesome Katana" icon="star" href="https://github.com/katana-network/awesome-katana">
+  Find tutorials, examples, and inspiration for building on Katana
 </Card>
 
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
+<Card title="Technical reference" icon="book" href="/katana/get-started/technical-reference-testnet">
+  Deep dive into chain configuration and advanced development
 </Card>
-
 </CardGroup>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+## Troubleshooting
+
+<AccordionGroup>
+<Accordion title="Anvil fork won't start">
+  **Common solutions:**
+  - Check that port 8545 isn't already in use by another application
+  - Ensure Foundry is properly installed and `anvil` is in your PATH
+  - Verify your RPC URL in `.env` is correct
+  - If the script isn't executable, run `chmod +x scripts/start_anvil.sh`
+</Accordion>
+
+<Accordion title="Dependencies won't install">
+  **Check these items:**
+  - Ensure Bun is properly installed: `bun --version`
+  - Try clearing Bun cache: `bun install --force`
+  - Check internet connection and repository access
+  - Verify you're in the correct `specialk` directory
+</Accordion>
+
+<Accordion title="Can't connect to testnet">
+  **Verification steps:**
+  - Check the RPC URL format in your `.env` file
+  - Verify network configuration matches Chain ID
+  - Try the local fork first to test your setup
+</Accordion>
+
+<Accordion title="Build process fails">
+  **Debug checklist:**
+  - Run `bun run build:all` for first-time builds
+  - Check for TypeScript compilation errors
+  - Ensure all dependencies installed successfully
+  - Verify static assets are in the correct directories
+</Accordion>
+</AccordionGroup>
+
+## Network information
+
+### Katana
+
+| Property                        | Value                                         |
+|----------------------------------|-----------------------------------------------|
+| **Chain Name**                   | Katana                                        |
+| **Chain ID**                     | `747474`                                      |
+| **Public RPC URL**               | [https://rpc.katana.network/](https://rpc.katana.network/) |
+| **Gas Token**                    | ETH                                           |
+| **Block Explorer**               | [https://katanascan.com/](https://katanascan.com/) |
+| **Block Time**                   | 1 second                                      |
+| **Block Gas Limit**              | 60M units                                     |
+| **Block Gas Target**             | 30M units                                     |
+| **Gas Pricing**                  | EIP1559                                       |
+| **EIP-1559 Elasticity Multiplier** | 60                                          |
+| **EIP-1559 Denominator**         | 250                                           |
+| **Data Availability**            | EIP4844                                       |
+| **Account Abstraction**          | EIP7702                                       |
+
+---
+
+### Bokuto
+
+| Property         | Value                                              |
+|------------------|----------------------------------------------------|
+| **Chain Name**   | Bokuto                                             |
+| **Chain ID**     | `737373`                                           |
+| **RPC URL**      | [https://rpc-bokuto.katanarpc.com](https://rpc-bokuto.katanarpc.com) |
+| **Block Explorer**      | [https://explorer-bokuto.katanarpc.com/](https://explorer-bokuto.katanarpc.com/) |
+| **Gas Token**           | ETH                                                                   |
+| **Block Time**          | 1 second                                                              |
+| **Gas Block Limit**     | 60M units                                                             |
+| **Gas Pricing**         | EIP1559                                                               |
+| **Data Availability**   | EIP4844                                                               |
+
+---
+
+### Tatara
+
+| Property                | Value                                                                 |
+|-------------------------|-----------------------------------------------------------------------|
+| **Network Name**        | Tatara Network (aka Katana Testnet)                                   |
+| **Chain ID**            | `129399`                                                              |
+| **RPC URL**             | `https://rpc.tatara.katanarpc.com/<apikey>`                           |
+| **Block Explorer**      | [https://explorer.tatara.katana.network/](https://explorer.tatara.katana.network/) |
+| **Vault Bridge Faucet** | [https://faucet-api.polygon.technology/api-docs/](https://faucet-api.polygon.technology/api-docs/) |
+| **Bridge UI**           | [https://portal-staging.polygon.technology/bridge](https://portal-staging.polygon.technology/bridge) |
+| **Gas Token**           | ETH                                                                   |
+| **Block Time**          | 1 second                                                              |
+| **Gas Block Limit**     | 60M units                                                             |
+| **Gas Pricing**         | EIP1559                                                               |
+| **Data Availability**   | EIP4844                                                               |
+
+<Info>
+**Local Development**: When using `bun run start:anvil katana`, your local fork will be available at `http://localhost:8545` with Chain ID `747474`.
+</Info>
+
+
+## Need help?
+
+<Card title="Report issues" icon="bug" href="https://github.com/katana-network/specialk/issues">
+  Found a problem with the starter kit? Report it on GitHub
+</Card>
+
+**Additional Resources:**
+- [Katana Starter Kit](https://github.com/katana-network/specialk) - Complete development environment
+- [Contract Directory](https://contracts.katana.tools) - Browse available money legos
+- [Awesome Katana](https://github.com/katana-network/awesome-katana) - Community tutorials and examples
+- [Technical Reference](/katana/get-started/technical-reference-testnet) - Advanced configuration guide
+
+Happy building on Katana! 🚀

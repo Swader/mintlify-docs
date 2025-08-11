@@ -1,0 +1,249 @@
+---
+title: "Hacker Springboard"
+description: "Everything you need to start building on Katana at hackathons - tech stack, resources, and inspiration"
+---
+
+# Hacker Springboard 🚀
+
+Welcome hackers! This is your launchpad for building innovative DeFi
+applications on Katana. Whether you're new to the ecosystem or ready to dive
+deep, we've got everything you need to start hacking.
+
+## Introduction to Katana
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/dZlE6YbeBIU?si=ktH-iPyc04ggcWd-"
+title="Katana Introduction" frameborder="0" allow="accelerometer; autoplay;
+clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Katana is a chain designed specifically for DeFi that rethinks how decentralized
+finance should work. Unlike other chains where liquidity is fragmented across
+hundreds of protocols, Katana concentrates all liquidity into carefully selected
+core applications: **Morpho** for lending, **Sushi** for spot trading,
+**Vertex** for perpetuals, **Universal** for RWA, etc etc. This creates
+unprecedented depth and composability for developers building the next
+generation of financial applications.
+
+What makes Katana unique is its sustainable approach to yield generation.
+Through innovative mechanisms like Vault Bridge (which deploys bridged assets
+into productive yield strategies), Chain-Owned Liquidity (funded by 100% of
+sequencer fees, CoL yield, and other mechanisms), and revenue sharing like that
+with Agora USD - the Treasury backed stablecoin - Katana creates multiple yield
+streams that benefit all participants. This means higher, more sustainable
+yields for users and deeper liquidity pools for developers to build on top of.
+
+## Quick Start
+
+<CardGroup cols={2}>
+<Card title="Development Kit" icon="code" href="/quickstart">
+  Clone the SpecialK starter kit and start building in minutes
+</Card>
+
+<Card title="Developer Chat" icon="message-chat" href="https://t.me/katanadevs">
+  Join the Telegram group for real-time support and collaboration
+</Card>
+
+<Card title="Developer Tools" icon="wrench" href="https://katana.tools">
+  Essential utilities and interfaces for Katana development
+</Card>
+
+<Card title="Ecosystem Explorer" icon="globe" href="https://app.katana.network/ecosystem">
+  Discover projects and opportunities in the Katana ecosystem
+</Card>
+
+<Card title="Money Legos Overview" icon="building-columns" href="/money-legos">
+  Learn the core primitives you can compose
+</Card>
+
+<Card title="What to Build" icon="lightbulb" href="/what-to-build">
+  22 build ideas mapped to money legos
+</Card>
+</CardGroup>
+
+## Katana-Adjacent Technology
+
+Understanding the broader technology stack will help you build more powerful and
+interoperable applications.
+
+### AggLayer: Cross-Chain Interoperability
+
+<Tabs>
+<Tab title="AggLayer Overview">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u7fJ0oECxQU?si=iC6Q3mHg1cbD0tw_" title="AggLayer Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</Tab>
+
+<Tab title="AggLayer Deep Dive">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ji_Xh6xo4nc?si=XfZT-9p9prysArg2" title="AggLayer Deep Dive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</Tab>
+</Tabs>
+
+The AggLayer is a trustless, cross-chain interoperability protocol that connects
+Katana to a growing network of chains, creating a unified liquidity layer across
+the entire ecosystem. For hackathon builders, this means your Katana
+applications can seamlessly interact with assets and users from multiple
+blockchains without complex bridge integrations or trust assumptions.
+
+AggLayer enables powerful use cases like cross-chain yield farming, unified
+asset management, and chain-abstracted user experiences. When you build on
+Katana, you're not just accessing Katana's deep liquidity - you're tapping into
+the shared liquidity of the entire AggLayer ecosystem. This opens up
+possibilities for innovative applications that were previously impossible with
+traditional bridge-based approaches.
+
+<Card title="Learn More" icon="arrow-right" href="https://agglayer.dev">
+  Explore AggLayer documentation and technical specifications
+</Card>
+
+### Polygon: Battle-Tested Infrastructure
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MBQAf6gmcW8?si=W3oKYp0QfdDjQhMy" title="Polygon Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Polygon stands as one of blockchain's most proven and adopted networks,
+delivering 99.99% uptime over 5 years with over 5 billion transactions
+processed. With Q2 2024 alone seeing 300 million transactions at an average fee
+of &lt;0.001 POL and 1.2M daily active addresses, Polygon demonstrates the scale
+and reliability that enterprise applications demand.
+
+The network's explosive growth in real-world usage is undeniable: 2.8B USD in
+stablecoin supply (up 40% in Q2), 385B USD in stablecoin volume, and 236 million
+stablecoin transfers completed in just one quarter. Small-to-medium peer-to-peer
+USDC payments grew 75% from Q1, while large payments over 10k USD surged 30%,
+totaling 15.8B USD in Q2 alone. World-class institutions including Apollo, China
+AMC, Spiko, Mercado Bitcoin, and Securitize have integrated Polygon, making it
+the ecosystem leader in on/off ramp integration and cross-chain support with net
+flows second only to Ethereum. While not yet connected to AggLayer, Polygon's
+assets can be bridged to Katana through multiple bridges, particularly via
+[portal.polygon.technology](https://portal.polygon.technology).
+
+Deploying assets from Polygon to Katana is the right way to go about doing
+things - maximize yield while leveraging the undefeatable reach of Polygon.
+
+<Card title="Explore Polygon" icon="arrow-right" href="https://polygon.technology/polygon-pos">
+  Discover Polygon's technology and ecosystem
+</Card>
+
+## Hackathon Resources
+
+<AccordionGroup>
+<Accordion icon="rocket" title="Quick Setup Guide">
+  **Get started in 5 minutes:**
+  
+  1. Clone the starter kit: `git clone https://github.com/katana-network/specialk`
+  2. Install dependencies: `bun install`
+  3. Start local fork: `bun run start:anvil katana`
+  4. Build and run: `bun run build:all && bun run dev`
+  
+  You're now running a local Katana environment with real mainnet state!
+</Accordion>
+
+<Accordion icon="building-columns" title="Core DeFi Primitives">
+  **Build on proven money legos:**
+  
+  - **Morpho**: Lending and borrowing with optimized rates
+  - **Sushi**: AMM trading with concentrated liquidity
+  - **Vertex**: Perpetual futures and derivatives
+  - **Vault Bridge**: Productive yield on bridged assets
+  - **Agora USD**: Treasury-backed stablecoin with native yield
+  
+  See the full overview on [Money Legos](/money-legos).
+</Accordion>
+
+<Accordion icon="code" title="Development Tools">
+  **Essential tools for rapid development:**
+  
+  - [Katana Tools](https://katana.tools): Developer tools for Katana
+  - [Contract Directory](https://contracts.katana.tools): Browse all available interfaces
+  - [Block Explorer](https://katanascan.com): Debug transactions and contracts
+  - [Bridge Interface](https://app.katana.network): Move assets to Katana
+  - [Ecosystem Dashboard](https://app.katana.network/ecosystem): Discover integrations
+</Accordion>
+
+<Accordion icon="users" title="Community Support">
+  **Get help when you need it:**
+  
+  - [Developer Telegram](https://t.me/katanadevs): Real-time chat with builders
+  - [GitHub Issues](https://github.com/katana-network/specialk/issues): Report bugs and get help
+  - [Documentation](https://docs.katana.network): Complete technical reference
+  - Hackathon mentors available in Telegram during events
+</Accordion>
+</AccordionGroup>
+
+## Inspiration: What to Build
+
+For a complete catalog of ideas, see [What to Build](/what-to-build).
+
+<CardGroup cols={3}>
+<Card title="Browse 22 Build Ideas" icon="lightbulb" href="/what-to-build">
+  Explore 22 hackathon-ready concepts mapped to money legos
+</Card>
+
+<Card title="Yield Strategies" icon="chart-line">
+  Build automated strategies that optimize across Katana's multiple yield sources
+</Card>
+
+<Card title="Cross-Chain DApps" icon="arrows-spin">
+  Create applications that leverage AggLayer for seamless multi-chain experiences
+</Card>
+
+<Card title="Trading Interfaces" icon="chart-candlestick">
+  Design new UIs for Sushi or Vertex that improve the trading experience
+</Card>
+
+<Card title="Lending Protocols" icon="coins">
+  Build specialized lending markets on top of Morpho's infrastructure
+</Card>
+
+<Card title="Asset Management" icon="briefcase">
+  Create portfolio management tools that utilize all of Katana's DeFi primitives
+</Card>
+
+<Card title="Analytics Dashboards" icon="chart-bar">
+  Build data visualization tools for Katana's concentrated liquidity model
+</Card>
+</CardGroup>
+
+## Network Information
+
+<Tabs>
+<Tab title="Katana Mainnet">
+| Property | Value |
+|----------|-------|
+| **Chain ID** | `747474` |
+| **RPC URL** | [https://rpc.katana.network/](https://rpc.katana.network/) |
+| **Block Explorer** | [https://katanascan.com/](https://katanascan.com/) |
+| **Bridge** | [https://app.katana.network](https://app.katana.network) |
+</Tab>
+
+<Tab title="Local Development">
+| Property | Value |
+|----------|-------|
+| **Chain ID** | `747474` |
+| **RPC URL** | `http://localhost:8545` |
+| **Setup** | `bun run start:anvil katana` |
+| **Benefits** | Real state, infinite test ETH |
+</Tab>
+</Tabs>
+
+## Ready to Hack?
+
+<Warning>
+**Hackathon Checklist:**
+- ✅ Join [developer Telegram](https://t.me/katanadevs) for support
+- ✅ Clone the [starter kit](https://github.com/katana-network/specialk)
+- ✅ Set up [local development environment](/quickstart)
+- ✅ Explore the [contract directory](https://contracts.katana.tools)
+- ✅ Check out [existing projects](https://app.katana.network/ecosystem) for inspiration
+</Warning>
+
+<CardGroup cols={2}>
+<Card title="Start Building" icon="hammer" href="/quickstart">
+  Follow our quickstart guide to set up your development environment
+</Card>
+
+<Card title="Get Support" icon="life-ring" href="https://t.me/katanadevs">
+  Join our developer community for real-time help and collaboration
+</Card>
+</CardGroup>
+
+Happy hacking! 🎯

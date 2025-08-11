@@ -1,0 +1,45 @@
+# Mintlify documentation build artifacts
+.mintlify/
+.mint.json
+.mint.config.js
+.mint.config.cjs
+.mint.config.mjs
+.mint.config.ts
+.mint.config.cts
+.mint.config.mts
+
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Build output
+dist/
+build/
+out/
+.next/
+.cache/
+.vercel/
+.netlify/
+
+# Misc
+*.local
+*.log
+coverage/
+*.tgz
+
+og
