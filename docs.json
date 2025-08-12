@@ -63,6 +63,9 @@
       }
     ]
   },
+  "seo": {
+      "indexing": "all"
+  },
   "footer": {
     "socials": {
       "x": "https://x.com/_swader_",

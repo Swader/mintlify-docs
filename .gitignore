@@ -42,4 +42,5 @@ out/
 coverage/
 *.tgz
 
-og
+og/*
+!og/.gitkeep
