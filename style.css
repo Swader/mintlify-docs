@@ -1,44 +1,59 @@
-/* Make Ask AI button more prominent and larger */
-#assistant-entry {
-    background-color: rgb(var(--primary)) !important; /* Use primary blue for standout */
+/* Parent container adjustments: Swap order and allow Ask AI to expand */
+.relative.hidden.lg\:flex.items-center.gap-2\.5.flex-1 {
+    flex-direction: row-reverse !important; /* Ask AI first */
+    gap: 0.75rem !important; /* Tighter gap for better fit */
+  }
+  
+  /* Make Ask AI larger and more prominent */
+  #assistant-entry {
+    flex: 1 !important; /* Allow it to expand and take most space */
+    min-width: 250px !important; /* Minimum width to ensure prominence */
+    background-color: rgb(var(--primary)) !important; /* Primary blue for standout */
     color: white !important;
     font-weight: 600 !important; /* Bolder text */
-    height: 2.75rem !important; /* Even taller for more prominence */
+    font-size: 1rem !important; /* Larger text */
+    height: 2.75rem !important; /* Taller */
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow */
     ring: none !important; /* Remove default ring */
     transition: background-color 0.2s, transform 0.2s !important;
   }
   
   #assistant-entry:hover {
     background-color: rgb(var(--primary-dark)) !important; /* Darker on hover */
-    transform: scale(1.05) !important; /* Slight zoom for emphasis */
+    transform: scale(1.05) !important; /* Slight zoom */
   }
   
   #assistant-entry svg {
-    color: white !important; /* Ensure icon is white */
+    color: white !important; /* White icon */
+    width: 1.25rem !important; /* Larger icon */
+    height: 1.25rem !important;
   }
   
   #assistant-entry span {
-    color: white !important; /* Ensure text is white */
+    color: white !important; /* White text */
   }
   
-  /* De-emphasize and make search input smaller */
+  /* Make search smaller and de-emphasized */
   #search-bar-entry {
-    opacity: 0.7 !important; /* Slightly faded */
-    height: 1.75rem !important; /* Even smaller */
+    flex: none !important; /* Prevent expansion */
+    width: 150px !important; /* Fixed narrow width */
+    min-width: 120px !important; /* Minimum for usability */
+    opacity: 0.7 !important; /* Faded */
+    height: 1.75rem !important; /* Shorter */
     font-size: 0.8rem !important; /* Smaller text */
-    background-color: rgb(var(--gray-100)/0.5) !important; /* Lighter, less noticeable bg */
+    background-color: rgb(var(--gray-100)/0.5) !important; /* Lighter bg */
+    padding-left: 0.75rem !important; /* Adjust padding for size */
+    padding-right: 0.75rem !important;
   }
   
   #search-bar-entry:hover {
-    ring: none !important; /* Reduce hover ring */
-    background-color: rgb(var(--gray-100)/0.7) !important; /* Subtle hover change */
+    ring: none !important; /* No hover ring */
+    background-color: rgb(var(--gray-100)/0.7) !important; /* Subtle hover */
   }
   
-  /* Optional: Adjust container to give AI more space if needed */
-  .relative.hidden.lg\:flex.items-center.gap-2\.5.flex-1 {
-    flex-direction: row-reverse !important; /* Swap positions: AI first, search second */
-    justify-content: flex-end !important; /* Push to right if space allows */
+  #search-bar-entry svg {
+    width: 0.875rem !important; /* Smaller icon */
+    height: 0.875rem !important;
   }
