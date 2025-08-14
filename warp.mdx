@@ -1,0 +1,101 @@
+---
+title: "Warp Terminal"
+description: "Using an AI-enhanced terminal in Katana's context"
+---
+
+The warp terminal is an AI enhanced terminal that understand human-written prompts, like any other LLM. It's a fantastic way to get the boilerplate of interacting with a regular terminal out of the way, and focus on the actual problem you're trying to solve.
+
+Their free plan is quite generous, and you can use it to get started with the Katana primitives and Katana's starter kit.
+
+## Rules
+
+A cool feature of Warp is the "rules" directory which allows you to explain to the AI how to "do things" - think of it as macros on steroids.
+
+Here is a rule we can test for booting up a Katana project. Once you install Warp, open your Rules and add the following:
+
+```text
+When asked to start a new katana project:
+
+1. Clone http://github.com/katana-network/specialk/ (ask the user into which folder, if the folder is not specified in the prompt)
+2. Make sure the user has bun (bun.sh) and foundry installed. If not `curl -L https://foundry.paradigm.xyz | bash` and `foundryup` should take care of it.
+3. After cloning, cd into the folder and run `bun install` and `cp .env.example .env`, then `bun run build:all`.
+4. Then tell the user that they can run `bun run start:anvil katana` to run a local clone of katana, and that they can run `bun run dev` to host their built app. They can rebuild the app using only `bun run build` going forward.
+```
+
+Edit this as you see fit, this is just an example.
+
+Now, if you ask Warp to "start a new katana project in a folder called myproject", it will follow the rules you've set.
+
+![Warp rule example](/images/warp1.png)
+![Warp rule example](/images/warp2.png)
+
+Other rules you can set include:
+
+- How to deploy a contract
+- How to interact with a contract
+- How to run a local fork of a chain
+- etc.
+
+Experiment and share the best ones with us!
+
+## Prompt sharing
+
+When you come up with cool prompts, you can share them with others. Here is an example:
+
+- [Summarize codebase prompt](https://app.warp.dev/drive/prompt/Summarize-codebase-vZLJpFgptlXMRWEOXboG7q)
+
+Running this will add it to your Warp "Shared with me" directory, and you'll be able to summon it at will. Let's try running it on the specialk repo we just initialized!
+
+![Warp prompt example](/images/warp3.png)
+![Warp prompt example](/images/warp4.png)
+
+## MCP
+
+Lastly, let's integrate MCP into Warp.
+
+We have 2 MCPs at our disposal:
+
+- the MCP of these docs
+- the MCP of SpecialK, Katana's starter kit
+
+Let's add both and enhance Warp's knowledge scope of our work.
+
+Click the MCP option in Warp, then "Add MCP". For remote MCPs, we can call them like this:
+
+```json
+{
+  "Superdocs": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://superdocs.katana.tools/mcp"
+    ],
+    "env": {},
+    "working_directory": null
+  }
+}
+```
+
+Now the terminal has the ability to search the Superdocs:
+
+![Warp MCP example](/images/warp5.png)
+
+For local MCPs, you follow the [official MCP instructions](https://docs.katana.network/katana/get-started/use-mcp/). In our case, we add the following JSON:
+
+```json
+{
+  "Specialk": {
+    "command": "bun run",
+    "args": [
+      "{ABSOLUTE_PATH_TO_YOUR_PROJECT}/dist-mcp/index.js"
+    ],
+    "env": {},
+    "working_directory": null
+  }
+}
+```
+
+---
+
+Warp has many other cool features - I recommend you explore them all and [check out their docs](https://docs.warp.dev)!

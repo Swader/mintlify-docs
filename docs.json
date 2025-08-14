@@ -32,6 +32,16 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Katana and AI",
+        "groups": [
+          {"group": "AI tools","pages": [
+            
+            "warp",
+            "cursor"
+          ]}
+        ]
       }
     ],
     "global": {

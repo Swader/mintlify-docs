@@ -1,0 +1,39 @@
+---
+title: "Cursor IDE & CLI"
+description: "Using Cursor's toolstack with Katana"
+---
+
+Cursor is modern VSCode fork with built in LLM support. It's a great way to get
+started with Katana. Cursor also provides a CLI tool that can be used directly
+in the terminal.
+
+## MCP
+
+The easiest way to get started with Cursor + Katana is to just load the cloned
+SpecialK repo into Cursor as a project. Then, add the MCP server:
+
+```json
+{
+  "Specialk": {
+    "command": "bun run",
+    "args": [
+      "{ABSOLUTE_PATH_TO_YOUR_PROJECT}/dist-mcp/index.js"
+    ],
+    "env": {},
+    "working_directory": null
+  }
+}
+```
+
+Once this is added to Cursor, you will have access to the toolkit in the chat
+UI. Here it is running an anvil chain after if first figures out another
+instance is running, killing it, and then booting up its own.
+
+![Cursor MCP example](/images/cursor1.png)
+
+## CLI
+
+To further explore the Cursor + Katana experience, install the Cursor CLI tool
+and run it like you would any other CLI tool like Claude Code. Ask it to write
+and deploy smart contracts for you, run on-chain analytics over night on anvil
+instances it spawns and kills repeatedly, and more.
