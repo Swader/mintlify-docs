@@ -1,131 +1,131 @@
 ---
 title: "What to Build"
-description: "Concrete build ideas for Katana hackathons mapped to named money legos and optional Agglayer angles"
+description: "Concrete build ideas for Katana hackathons mapped to named Katana primitives and optional Agglayer angles"
 ---
 
 ## UX & Wallet
 1) Gasless WebAuthn Smart Wallet
-- Legos: ERC-4337 (EntryPoint v0.6/v0.7), RIP-7212 (R1), Permit2, Bundler3
+- Primitives: ERC-4337 (EntryPoint v0.6/v0.7), RIP-7212 (R1), Permit2, Bundler3
 - Build: WebAuthn login → session keys → sponsored gas. One-click swap (Sushi v3) + deposit (MetaMorpho/Yearn) with signature approvals.
 - Agglayer: Fund from another chain, bridge via Agglayer, continue flow seamlessly on Katana.
 
 2) Portfolio With One-Click Strategy Entry
-- Legos: AUSD, SushiSwap v3, Morpho Blue, MetaMorpho, Multicall3, Oracles (Chainlink/RedStone)
+- Primitives: AUSD, SushiSwap v3, Morpho Blue, MetaMorpho, Multicall3, Oracles (Chainlink/RedStone)
 - Build: Execute wrap→swap→supply→allocate in one batched tx. Show oracle-guarded slippage and projected APY.
 - Agglayer: Detect assets on other chains, auto-bridge, then proceed on Katana.
 
 3) Smart Account Policy Manager
-- Legos: ERC-4337, Permit2, Gnosis Safe, MultiSendCallOnly
+- Primitives: ERC-4337, Permit2, Gnosis Safe, MultiSendCallOnly
 - Build: Per-app spending limits, time windows, emergency pause and mass-revoke. Export/import policies for teams/families.
 - Agglayer: Policies portable across chains integrated in the account stack.
 
 ## Frontend Apps
 4) Cross-Chain On-Ramp Router
-- Legos: Agglayer Bridge, Native Converters (WETH/USDC/USDT/WBTC), AUSD
+- Primitives: Agglayer Bridge, Native Converters (WETH/USDC/USDT/WBTC), AUSD
 - Build: Quote best path from origin chain funding to target Katana asset. Auto wrap/unwrap, swap on Sushi v3, and deposit.
 - Agglayer: Single UX that abstracts chain boundaries for on-ramping.
 
 5) DeFi Command Palette
-- Legos: Bundler3, Permit2, SushiSwap v3, Morpho Blue, MetaMorpho
+- Primitives: Bundler3, Permit2, SushiSwap v3, Morpho Blue, MetaMorpho
 - Build: Spotlight-like command bar: “Borrow 500 AUSD,” “Rebalance LP to 1% band,” “Exit all to AUSD.” Persist recipes.
 - Agglayer: Commands that include bridge+execute across chains.
 
 6) NFT Creator Studio with Seaport + Catalogs
-- Legos: Seaport, Conduit, Catalog/Render utils, Bulk Writer
+- Primitives: Seaport, Conduit, Catalog/Render utils, Bulk Writer
 - Build: Launch collections, manage traits, bulk updates, criteria orders, creator analytics.
 - Agglayer: Claim passes on another chain, redeem on Katana.
 
 ## Back-End Services
 7) Intent Relayer with Risk Controls
-- Legos: ERC-4337, Oracles (Chainlink/RedStone), Bundler3, CreateX
+- Primitives: ERC-4337, Oracles (Chainlink/RedStone), Bundler3, CreateX
 - Build: Convert intents into bounded transactions with price bands/circuit breakers, deploy ephemeral routers deterministically.
 - Agglayer: Execute intents that include bridge legs mid-flow.
 
 8) Multicall State Cache
-- Legos: Multicall3, Oracles
+- Primitives: Multicall3, Oracles
 - Build: High-speed read cache for dashboards; snapshots and historical deltas.
 - Agglayer: Unified state view spanning Katana and connected chains.
 
 9) Enterprise Treasury Automations
-- Legos: Gnosis Safe, MultiSend, Yearn, MetaMorpho
+- Primitives: Gnosis Safe, MultiSend, Yearn, MetaMorpho
 - Build: Scheduled payouts, ticketed approvals, share-class accounting, and rebalancing into vaults and lending.
 - Agglayer: Policies govern cross-chain flows and settlements.
 
 ## DeFi Primitives & Products
 10) Auto-Hedged LP Vault
-- Legos: SushiSwap v3, Oracles, (Optional) Perps venue, Bundler3
+- Primitives: SushiSwap v3, Oracles, (Optional) Perps venue, Bundler3
 - Build: LP in bands, hedge delta with perps, auto-roll ranges based on signals.
 - Agglayer: Hedge on chain A, LP on Katana; manage from one UX.
 
 11) Collateralized Credit Lines for Creators
-- Legos: Morpho Blue, Oracles, AUSD
+- Primitives: Morpho Blue, Oracles, AUSD
 - Build: Tokenize revenue/holdings to draw credit lines with dynamic LTV and health monitors.
 - Agglayer: Accept revenue attestations from other chains, settle on Katana.
 
 12) Yield-Diversified AUSD Wrapper
-- Legos: AUSD, MetaMorpho, Yearn, Oracles
+- Primitives: AUSD, MetaMorpho, Yearn, Oracles
 - Build: Wrapper rotates allocation among vaults; publishes on-chain NAV; instant mint/redeem.
 - Agglayer: Allocate yield across chains where vaults are strongest.
 
 13) Structured Basis Trade
-- Legos: (Optional) Perps venue, Oracles, Morpho Blue
+- Primitives: (Optional) Perps venue, Oracles, Morpho Blue
 - Build: Long spot via Sushi v3 + short perps; capture funding; one-click unwind; downloadable PnL.
 - Agglayer: Route to best perps venue while settling on Katana.
 
 14) Stable Rails for Subscriptions
-- Legos: AUSD, Permit2, ERC-4337
+- Primitives: AUSD, Permit2, ERC-4337
 - Build: Merchant SDK with pull-payments via signatures, subscription windows, retry logic, and disputes.
 - Agglayer: Merchants settle on their chain; users pay from Katana balances.
 
 15) Vault-Bridged Corporate Cards
-- Legos: bvbETH/bvbUSDC, vbETH/vbUSDC, ERC-4337, RIP-7212
+- Primitives: bvbETH/bvbUSDC, vbETH/vbUSDC, ERC-4337, RIP-7212
 - Build: Balances earn yield while idle; device-bound approvals; per-employee limits and just-in-time top-ups.
 - Agglayer: Spending limits consider balances across chains.
 
 ## AI x Crypto
 16) AI Strategy Copilot
-- Legos: Oracles, AUSD, SushiSwap v3, Morpho Blue, MetaMorpho/Yearn, Bundler3
+- Primitives: Oracles, AUSD, SushiSwap v3, Morpho Blue, MetaMorpho/Yearn, Bundler3
 - Build: Natural-language to portfolio: simulate, explain risk, then execute via batched tx with protected slippage.
 - Agglayer: Cross-chain route planning and execution.
 
 17) Fraud & Anomaly Sentinel
-- Legos: Oracles, Gnosis Safe, MultiSendCallOnly
+- Primitives: Oracles, Gnosis Safe, MultiSendCallOnly
 - Build: ML signals flag anomalies; auto-prepare “pause/withdraw to safety” bundles for review and 1-click execution.
 - Agglayer: Sentinel watches and can act across networks.
 
 18) Intent Market Maker
-- Legos: Bundler3, CreateX, SushiSwap v3, (Optional) Perps
+- Primitives: Bundler3, CreateX, SushiSwap v3, (Optional) Perps
 - Build: Agent quotes and fulfills user intents, deploying deterministic routers, hedging inventory.
 - Agglayer: Route order flow to best liquidity anywhere; settle on Katana.
 
 ## Cross-Chain & Agglayer-Native
 19) Unified Trading Terminal
-- Legos: Agglayer Bridge, SushiSwap v3, (Optional) Perps, Oracles, Converters
+- Primitives: Agglayer Bridge, SushiSwap v3, (Optional) Perps, Oracles, Converters
 - Build: One screen to trade spot/perps; bridge collateral in-line; unified margin and risk.
 - Agglayer: Abstract chain boundaries for capital and execution.
 
 20) Cross-Chain Streaming Payroll
-- Legos: AUSD, Agglayer Bridge, Permit2
+- Primitives: AUSD, Agglayer Bridge, Permit2
 - Build: Real-time payroll that follows recipients across chains; failover and caching; employer dashboards.
 - Agglayer: Streams reroute during congestion or maintenance.
 
 21) Origin-Aware Savings
-- Legos: vbETH/vbUSDC vaults, bvbETH/bvbUSDC on Katana, Yearn/MetaMorpho
+- Primitives: vbETH/vbUSDC vaults, bvbETH/bvbUSDC on Katana, Yearn/MetaMorpho
 - Build: Deposit anywhere; earn at origin or destination; unified balance view; emergency exit.
 - Agglayer: Auto-select best yield location; move funds accordingly.
 
 ## Infra & Tooling
 22) Deterministic Factory Explorer
-- Legos: CreateX, DeterministicDeploymentProxy, Bundler3
+- Primitives: CreateX, DeterministicDeploymentProxy, Bundler3
 - Build: Compute addresses for salts/bytecode; verify deployments; generate “deploy+initialize” bundles; export SDK snippets.
 - Agglayer: Coordinate mirrored deployments across chains.
 
 23) Oracle Guardrails Kit
-- Legos: Chainlink, RedStone, MultiSendCallOnly
+- Primitives: Chainlink, RedStone, MultiSendCallOnly
 - Build: Drop-in guards for price bands, TWAP checks, stale feed detection; composable policy library.
 - Agglayer: Consistent guardrails across chains.
 
 24) Address & ABI Concierge
-- Legos: utils/addresses, Multicall3
+- Primitives: utils/addresses, Multicall3
 - Build: Dev portal or API that resolves names to addresses/ABIs per chain (including origin mapping), plus live contract sanity checks using multicall.
 - Agglayer: One resolver interface for the entire connected set.
