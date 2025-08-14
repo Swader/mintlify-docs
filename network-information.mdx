@@ -5,6 +5,12 @@ description: "Information about connecting to the chains"
 
 ## Network information
 
+<Info>Note: during development, it is recommended to use the
+[Starter Kit](/quickstart) to clone the state of these live chains locally and
+work without needing testnet tokens. It's a one minute process and helps you
+experiment before you're ready to deploy live.</Info>
+
+
 ### Katana
 
 | Property                        | Value                                         |
@@ -34,10 +40,20 @@ description: "Information about connecting to the chains"
 | **RPC URL**      | [https://rpc-bokuto.katanarpc.com](https://rpc-bokuto.katanarpc.com) |
 | **Block Explorer**      | [https://explorer-bokuto.katanarpc.com/](https://explorer-bokuto.katanarpc.com/) |
 | **Gas Token**           | ETH                                                                   |
+| **Faucet**              | [https://faucet.katana.tools](https://faucet.katana.tools)            |
 | **Block Time**          | 1 second                                                              |
 | **Gas Block Limit**     | 60M units                                                             |
 | **Gas Pricing**         | EIP1559                                                               |
 | **Data Availability**   | EIP4844                                                               |
+
+To brige Eth into Bokuto from Sepolia, use
+[this contract](https://sepolia.etherscan.io/address/0x528e26b25a34a4A5d0dbDa1d57D318153d2ED582#writeProxyContract),
+`bridgeAsset` function. Payable amount is amount of Eth to bridge without
+decimals (i.e. 5), destination network 37, amount is amount with decimals (i.e.
+5000000000000000000), token address is
+`0x0000000000000000000000000000000000000000` for Eth, force update is `true` and
+`permitData` is `0x`. Once submitted, the transfer will be processsed in 10 - 30
+minutes.
 
 ---
 
@@ -50,14 +66,11 @@ description: "Information about connecting to the chains"
 | **RPC URL**             | `https://rpc.tatara.katanarpc.com/`                           |
 | **Block Explorer**      | [https://explorer.tatara.katana.network/](https://explorer.tatara.katana.network/) |
 | **Vault Bridge Faucet** | [https://faucet-api.polygon.technology/api-docs/](https://faucet-api.polygon.technology/api-docs/) |
-| **Bridge UI**           | [https://portal-staging.polygon.technology/bridge](https://portal-staging.polygon.technology/bridge) |
+| **Faucet**              | [https://faucet.katana.tools](https://faucet.katana.tools)            |
+| **Bridge UI**           | [bridge.katana.network](https://bridge.katana.network) (turn on Testnet mode in the sidebar)|
 | **Gas Token**           | ETH                                                                   |
 | **Block Time**          | 1 second                                                              |
 | **Gas Block Limit**     | 60M units                                                             |
 | **Gas Pricing**         | EIP1559                                                               |
 | **Data Availability**   | EIP4844                                                               |
 
-<Info> **Local Development**: When using `bun run start:anvil katana`, your
-local fork will be available at `http://localhost:8545` with Chain ID `747474`.
-Depending on which chain you anvil-start, the chain ID will be different but the
-RPC URL will be the same. </Info>
