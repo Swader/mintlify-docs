@@ -15,9 +15,7 @@ description: "IPOL: Interface for Bridge-wrapped POL (POL) on Katana (POL implem
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xb24e3035d1FCBC0E43CF3143C3Fd92E53df2009b`
-- **bokuto**: `null`
+- **katana**: [`0xb24e3035d1FCBC0E43CF3143C3Fd92E53df2009b`](https://katanascan.com/address/0xb24e3035d1FCBC0E43CF3143C3Fd92E53df2009b)
 
 ### Function signatures
 

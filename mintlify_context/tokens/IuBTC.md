@@ -15,9 +15,7 @@ description: "IuBTC: Interface for Universal BTC (uBTC), the Universal wrapped B
 
 ### Addresses
 
-- **tatara**: `0xB295FDad3aD8521E9Bc20CAeBB36A4258038574e`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xB295FDad3aD8521E9Bc20CAeBB36A4258038574e`](https://explorer.tatara.katana.network/address/0xB295FDad3aD8521E9Bc20CAeBB36A4258038574e)
 
 ### Function signatures
 

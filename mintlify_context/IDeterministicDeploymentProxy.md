@@ -14,9 +14,7 @@ description: "IDeterministicDeploymentProxy: This contract enables deploying oth
 
 ### Addresses
 
-- **tatara**: `0x4e59b44847b379578588920cA78FbF26c0B4956C`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x4e59b44847b379578588920cA78FbF26c0B4956C`](https://explorer.tatara.katana.network/address/0x4e59b44847b379578588920cA78FbF26c0B4956C)
 
 ### Function signatures
 

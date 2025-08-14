@@ -15,9 +15,8 @@ description: "IBulkWriter: Utility batch methods to interact with ERCs 7401 (Nes
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B`
-- **bokuto**: `0xA681A7BE7A87bDA505c1a947b172b8A1988E329A`
+- **katana**: [`0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B`](https://katanascan.com/address/0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B)
+- **bokuto**: [`0xA681A7BE7A87bDA505c1a947b172b8A1988E329A`](https://explorer-bokuto.katanarpc.com/address/0xA681A7BE7A87bDA505c1a947b172b8A1988E329A)
 
 ### Function signatures
 

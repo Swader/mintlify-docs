@@ -15,9 +15,7 @@ description: "IweETH: Interface for Bridge-wrapped weETH (weETH) on Katana (weET
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x9893989433e7a383Cb313953e4c2365107dc19a7`
-- **bokuto**: `null`
+- **katana**: [`0x9893989433e7a383Cb313953e4c2365107dc19a7`](https://katanascan.com/address/0x9893989433e7a383Cb313953e4c2365107dc19a7)
 
 ### Function signatures
 

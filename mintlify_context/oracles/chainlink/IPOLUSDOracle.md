@@ -15,9 +15,7 @@ description: "IPOLUSDOracle: Interface for POL/USD Chainlink price oracle on Kat
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xF6630799b5387e0E9ACe92a5E82673021781B440`
-- **bokuto**: `null`
+- **katana**: [`0xF6630799b5387e0E9ACe92a5E82673021781B440`](https://katanascan.com/address/0xF6630799b5387e0E9ACe92a5E82673021781B440)
 
 ### Function signatures
 

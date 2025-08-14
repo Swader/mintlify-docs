@@ -15,9 +15,7 @@ description: "IMorphoAdaptiveIRM: Interface for Morpho's Adaptive Curve Interest
 
 ### Addresses
 
-- **tatara**: `0x9eB6d0D85FCc07Bf34D69913031ade9E16BD5dB0`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x9eB6d0D85FCc07Bf34D69913031ade9E16BD5dB0`](https://explorer.tatara.katana.network/address/0x9eB6d0D85FCc07Bf34D69913031ade9E16BD5dB0)
 
 ### Function signatures
 

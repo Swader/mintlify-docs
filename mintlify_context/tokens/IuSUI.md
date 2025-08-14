@@ -15,9 +15,7 @@ description: "IuSUI: Interface for SUI (Universal) (uSUI) on Katana (uSUI implem
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xb0505e5a99abd03d94a1169e638B78EDfEd26ea4`
-- **bokuto**: `null`
+- **katana**: [`0xb0505e5a99abd03d94a1169e638B78EDfEd26ea4`](https://katanascan.com/address/0xb0505e5a99abd03d94a1169e638B78EDfEd26ea4)
 
 ### Function signatures
 

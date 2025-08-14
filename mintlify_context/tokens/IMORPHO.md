@@ -15,9 +15,7 @@ description: "IMORPHO: Interface for Bridge-wrapped MORPHO (MORPHO) on Katana (M
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x1e5eFCA3D0dB2c6d5C67a4491845c43253eB9e4e`
-- **bokuto**: `null`
+- **katana**: [`0x1e5eFCA3D0dB2c6d5C67a4491845c43253eB9e4e`](https://katanascan.com/address/0x1e5eFCA3D0dB2c6d5C67a4491845c43253eB9e4e)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "ISUIUSDOracle: Interface for SUI/USD RedStone price oracle on Kata
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x98ECE0D516f891a35278E3186772fb1545b274eB`
-- **bokuto**: `null`
+- **katana**: [`0x98ECE0D516f891a35278E3186772fb1545b274eB`](https://katanascan.com/address/0x98ECE0D516f891a35278E3186772fb1545b274eB)
 
 ### Function signatures
 

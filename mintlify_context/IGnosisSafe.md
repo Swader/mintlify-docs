@@ -15,9 +15,7 @@ description: "IGnosisSafe: This contract enables multisig wallet functionality w
 
 ### Addresses
 
-- **tatara**: `0x69f4D1788e39c87893C980c06EdF4b7f686e2938`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x69f4D1788e39c87893C980c06EdF4b7f686e2938`](https://explorer.tatara.katana.network/address/0x69f4D1788e39c87893C980c06EdF4b7f686e2938)
 
 ### Function signatures
 

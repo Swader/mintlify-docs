@@ -14,9 +14,7 @@ description: "IPolygonZkEVMDeployer: Interface for the PolygonZkEVMDeployer cont
 
 ### Addresses
 
-- **tatara**: `0x36810012486fc134D0679c07f85fe5ba5A087D8C`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x36810012486fc134D0679c07f85fe5ba5A087D8C`](https://explorer.tatara.katana.network/address/0x36810012486fc134D0679c07f85fe5ba5A087D8C)
 
 ### Function signatures
 

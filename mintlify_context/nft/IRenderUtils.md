@@ -15,9 +15,8 @@ description: "IRenderUtils: Utility methods to get batch get full state of NFTs 
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xA681A7BE7A87bDA505c1a947b172b8A1988E329A`
-- **bokuto**: `0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B`
+- **katana**: [`0xA681A7BE7A87bDA505c1a947b172b8A1988E329A`](https://katanascan.com/address/0xA681A7BE7A87bDA505c1a947b172b8A1988E329A)
+- **bokuto**: [`0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B`](https://explorer-bokuto.katanarpc.com/address/0xcd891c3de90dcdF99549E9B6402BFAa695DEc69B)
 
 ### ABI
 

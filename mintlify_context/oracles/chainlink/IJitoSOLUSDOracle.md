@@ -15,9 +15,7 @@ description: "IJitoSOLUSDOracle: Interface for jitoSOL/USD Chainlink price oracl
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x36E03469335b7F2eF51aAeB914b76c038645679A`
-- **bokuto**: `null`
+- **katana**: [`0x36E03469335b7F2eF51aAeB914b76c038645679A`](https://katanascan.com/address/0x36E03469335b7F2eF51aAeB914b76c038645679A)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IMORPHOUSDOracle: Interface for MORPHO/USD Chainlink price oracle 
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xdFd824A5Dcad8667142d58FE4aF115d5d052f26c`
-- **bokuto**: `null`
+- **katana**: [`0xdFd824A5Dcad8667142d58FE4aF115d5d052f26c`](https://katanascan.com/address/0xdFd824A5Dcad8667142d58FE4aF115d5d052f26c)
 
 ### Function signatures
 

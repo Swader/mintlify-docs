@@ -14,9 +14,7 @@ description: "IGnosisSafeL2: This contract extends IGnosisSafe with L2-specific 
 
 ### Addresses
 
-- **tatara**: `0xfb1bffC9d739B8D520DaF37dF666da4C687191EA`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xfb1bffC9d739B8D520DaF37dF666da4C687191EA`](https://explorer.tatara.katana.network/address/0xfb1bffC9d739B8D520DaF37dF666da4C687191EA)
 
 ### Function signatures
 

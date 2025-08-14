@@ -15,9 +15,7 @@ description: "ISenderCreator Interface (v0.6.0): Helper contract for creating se
 
 ### Addresses
 
-- **tatara**: `0xEFC2c1444eBCC4Db75e7613d20C6a62fF67A167C`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xEFC2c1444eBCC4Db75e7613d20C6a62fF67A167C`](https://explorer.tatara.katana.network/address/0xEFC2c1444eBCC4Db75e7613d20C6a62fF67A167C)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IYFIUSDOracle: Interface for YFI/USD Chainlink price oracle on Kat
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xfcDcCF5C2BEAB72FDb910481beaE807F5453686B`
-- **bokuto**: `null`
+- **katana**: [`0xfcDcCF5C2BEAB72FDb910481beaE807F5453686B`](https://katanascan.com/address/0xfcDcCF5C2BEAB72FDb910481beaE807F5453686B)
 
 ### Function signatures
 

@@ -21,9 +21,9 @@ description: "IbvbEth: Interface for the Bridged Vault Bridge ETH token. This is
 
 ### Addresses
 
-- **tatara**: `0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4`
-- **katana**: `0xEE7D8BCFb72bC1880D0Cf19822eB0A2e6577aB62`
-- **bokuto**: `0x84b3493fA9B125A8EFf1CCc1328Bd84D0B4a2Dbf`
+- **tatara**: [`0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4`](https://explorer.tatara.katana.network/address/0x17B8Ee96E3bcB3b04b3e8334de4524520C51caB4)
+- **katana**: [`0xEE7D8BCFb72bC1880D0Cf19822eB0A2e6577aB62`](https://katanascan.com/address/0xEE7D8BCFb72bC1880D0Cf19822eB0A2e6577aB62)
+- **bokuto**: [`0x84b3493fA9B125A8EFf1CCc1328Bd84D0B4a2Dbf`](https://explorer-bokuto.katanarpc.com/address/0x84b3493fA9B125A8EFf1CCc1328Bd84D0B4a2Dbf)
 
 ### Function signatures
 

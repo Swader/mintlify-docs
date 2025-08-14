@@ -14,9 +14,7 @@ description: "IPolygonZkEVMTimelock: Interface for the PolygonZkEVMTimelock cont
 
 ### Addresses
 
-- **tatara**: `0xdbC6981a11fc2B000c635bFA7C47676b25C87D39`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xdbC6981a11fc2B000c635bFA7C47676b25C87D39`](https://explorer.tatara.katana.network/address/0xdbC6981a11fc2B000c635bFA7C47676b25C87D39)
 
 ### Function signatures
 

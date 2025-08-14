@@ -15,9 +15,7 @@ description: "IwstETHUSDOracle: Interface for wstETH/USD RedStone price oracle o
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xE23eCA12D7D2ED3829499556F6dCE06642AFd990`
-- **bokuto**: `null`
+- **katana**: [`0xE23eCA12D7D2ED3829499556F6dCE06642AFd990`](https://katanascan.com/address/0xE23eCA12D7D2ED3829499556F6dCE06642AFd990)
 
 ### Function signatures
 

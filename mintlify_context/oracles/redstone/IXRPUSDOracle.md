@@ -15,9 +15,7 @@ description: "IXRPUSDOracle: Interface for XRP/USD RedStone price oracle on Kata
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xb4fe9028A4D4D8B3d00e52341F2BB0798860532C`
-- **bokuto**: `null`
+- **katana**: [`0xb4fe9028A4D4D8B3d00e52341F2BB0798860532C`](https://katanascan.com/address/0xb4fe9028A4D4D8B3d00e52341F2BB0798860532C)
 
 ### Function signatures
 

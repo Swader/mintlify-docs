@@ -15,9 +15,9 @@ description: "IUSDTNativeConverter: Interface for the USDT Native Converter (Con
 
 ### Addresses
 
-- **tatara**: `0x8f3a47e64d3AD1fBdC5C23adD53183CcCD05D8a4`
-- **katana**: `0x053FA9b934b83E1E0ffc7e98a41aAdc3640bB462`
-- **bokuto**: `0x1bd455C30ad8E2b8dF40df44A2eF923d67B33Feb`
+- **tatara**: [`0x8f3a47e64d3AD1fBdC5C23adD53183CcCD05D8a4`](https://explorer.tatara.katana.network/address/0x8f3a47e64d3AD1fBdC5C23adD53183CcCD05D8a4)
+- **katana**: [`0x053FA9b934b83E1E0ffc7e98a41aAdc3640bB462`](https://katanascan.com/address/0x053FA9b934b83E1E0ffc7e98a41aAdc3640bB462)
+- **bokuto**: [`0x1bd455C30ad8E2b8dF40df44A2eF923d67B33Feb`](https://explorer-bokuto.katanarpc.com/address/0x1bd455C30ad8E2b8dF40df44A2eF923d67B33Feb)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IwstETH: Interface for Bridge-wrapped wstETH (wstETH) on Katana (w
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x7Fb4D0f51544F24F385a421Db6e7D4fC71Ad8e5C`
-- **bokuto**: `null`
+- **katana**: [`0x7Fb4D0f51544F24F385a421Db6e7D4fC71Ad8e5C`](https://katanascan.com/address/0x7Fb4D0f51544F24F385a421Db6e7D4fC71Ad8e5C)
 
 ### Function signatures
 

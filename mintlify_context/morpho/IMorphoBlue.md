@@ -15,9 +15,7 @@ description: "IMorphoBlue: Interface for Morpho Blue lending protocol (This inte
 
 ### Addresses
 
-- **tatara**: `0xC263190b99ceb7e2b7409059D24CB573e3bB9021`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xC263190b99ceb7e2b7409059D24CB573e3bB9021`](https://explorer.tatara.katana.network/address/0xC263190b99ceb7e2b7409059D24CB573e3bB9021)
 
 ### Function signatures
 

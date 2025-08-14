@@ -15,9 +15,7 @@ description: "ISUSHI: Interface for Bridge-wrapped SUSHI (SUSHI) on Katana (SUSH
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x17BFF452dae47e07CeA877Ff0E1aba17eB62b0aB`
-- **bokuto**: `null`
+- **katana**: [`0x17BFF452dae47e07CeA877Ff0E1aba17eB62b0aB`](https://katanascan.com/address/0x17BFF452dae47e07CeA877Ff0E1aba17eB62b0aB)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IADAUSDOracle: Interface for ADA/USD RedStone price oracle on Kata
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xf1454949C6dEdfb500ae63Aa6c784Aa1Dde08A6c`
-- **bokuto**: `null`
+- **katana**: [`0xf1454949C6dEdfb500ae63Aa6c784Aa1Dde08A6c`](https://katanascan.com/address/0xf1454949C6dEdfb500ae63Aa6c784Aa1Dde08A6c)
 
 ### Function signatures
 

@@ -11,9 +11,7 @@ description: "Documentation for SushiV3PositionManager at ISushiV3PositionManage
 
 ### Addresses
 
-- **tatara**: `0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C`](https://explorer.tatara.katana.network/address/0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C)
 
 ### Function signatures
 

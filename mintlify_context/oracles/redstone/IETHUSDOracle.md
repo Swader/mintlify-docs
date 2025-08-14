@@ -15,9 +15,7 @@ description: "IETHUSDOracle: Interface for ETH/USD RedStone price oracle on Kata
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xE94c9f9A1893f23be38A5C0394E46Ac05e8a5f8C`
-- **bokuto**: `null`
+- **katana**: [`0xE94c9f9A1893f23be38A5C0394E46Ac05e8a5f8C`](https://katanascan.com/address/0xE94c9f9A1893f23be38A5C0394E46Ac05e8a5f8C)
 
 ### Function signatures
 

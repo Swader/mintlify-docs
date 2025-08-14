@@ -14,9 +14,7 @@ description: "IMorphoChainlinkOracleV2Factory: Interface for the factory that cr
 
 ### Addresses
 
-- **tatara**: `0xe795DD345aD7E1bC9e8F6B4437a21704d731F9E0`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xe795DD345aD7E1bC9e8F6B4437a21704d731F9E0`](https://explorer.tatara.katana.network/address/0xe795DD345aD7E1bC9e8F6B4437a21704d731F9E0)
 
 ### Function signatures
 

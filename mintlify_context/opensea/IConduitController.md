@@ -15,9 +15,9 @@ description: "IConduitController: Interface for OpenSea's Conduit Controller sys
 
 ### Addresses
 
-- **tatara**: `0x00000000F9490004C11Cef243f5400493c00Ad63`
-- **katana**: `0x00000000F9490004C11Cef243f5400493c00Ad63`
-- **bokuto**: `0x00000000F9490004C11Cef243f5400493c00Ad63`
+- **tatara**: [`0x00000000F9490004C11Cef243f5400493c00Ad63`](https://explorer.tatara.katana.network/address/0x00000000F9490004C11Cef243f5400493c00Ad63)
+- **katana**: [`0x00000000F9490004C11Cef243f5400493c00Ad63`](https://katanascan.com/address/0x00000000F9490004C11Cef243f5400493c00Ad63)
+- **bokuto**: [`0x00000000F9490004C11Cef243f5400493c00Ad63`](https://explorer-bokuto.katanarpc.com/address/0x00000000F9490004C11Cef243f5400493c00Ad63)
 
 ### Function signatures
 

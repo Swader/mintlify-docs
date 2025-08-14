@@ -15,9 +15,7 @@ description: "IbvUSD: Interface for BitVault USD (bvUSD) on Katana (bvUSD implem
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x876aac7648D79f87245E73316eB2D100e75F3Df1`
-- **bokuto**: `null`
+- **katana**: [`0x876aac7648D79f87245E73316eB2D100e75F3Df1`](https://katanascan.com/address/0x876aac7648D79f87245E73316eB2D100e75F3Df1)
 
 ### Function signatures
 

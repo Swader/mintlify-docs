@@ -15,9 +15,7 @@ description: "IGlobalExitRootManagerL2SovereignChain: Interface for the GlobalEx
 
 ### Addresses
 
-- **tatara**: `0xa40D5f56745a118D0906a34E69aeC8C0Db1cB8fA`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xa40D5f56745a118D0906a34E69aeC8C0Db1cB8fA`](https://explorer.tatara.katana.network/address/0xa40D5f56745a118D0906a34E69aeC8C0Db1cB8fA)
 
 ### Function signatures
 

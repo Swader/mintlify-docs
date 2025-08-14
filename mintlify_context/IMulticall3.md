@@ -15,9 +15,7 @@ description: "IMulticall3: Allows batching multiple read-only calls into a singl
 
 ### Addresses
 
-- **tatara**: `0xcA11bde05977b3631167028862bE2a173976CA11`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xcA11bde05977b3631167028862bE2a173976CA11`](https://explorer.tatara.katana.network/address/0xcA11bde05977b3631167028862bE2a173976CA11)
 
 ### Function signatures
 

@@ -15,9 +15,9 @@ description: "ISeaport: Interface for OpenSea's Seaport 1.6 marketplace protocol
 
 ### Addresses
 
-- **tatara**: `0x0000000000FFe8B47B3e2130213B802212439497`
-- **katana**: `0x0000000000000068F116a894984e2DB1123eB395`
-- **bokuto**: `0x0000000000000068F116a894984e2DB1123eB395`
+- **tatara**: [`0x0000000000FFe8B47B3e2130213B802212439497`](https://explorer.tatara.katana.network/address/0x0000000000FFe8B47B3e2130213B802212439497)
+- **katana**: [`0x0000000000000068F116a894984e2DB1123eB395`](https://katanascan.com/address/0x0000000000000068F116a894984e2DB1123eB395)
+- **bokuto**: [`0x0000000000000068F116a894984e2DB1123eB395`](https://explorer-bokuto.katanarpc.com/address/0x0000000000000068F116a894984e2DB1123eB395)
 
 ### Function signatures
 

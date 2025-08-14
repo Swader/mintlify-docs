@@ -14,9 +14,7 @@ description: "IProxyAdmin: Interface for the ProxyAdmin contract which manages t
 
 ### Addresses
 
-- **tatara**: `0x85cEB41028B1a5ED2b88E395145344837308b251`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x85cEB41028B1a5ED2b88E395145344837308b251`](https://explorer.tatara.katana.network/address/0x85cEB41028B1a5ED2b88E395145344837308b251)
 
 ### Function signatures
 

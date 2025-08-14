@@ -15,9 +15,7 @@ description: "IYvAUSD: Interface for the Yearn AUSD ERC4626 vault (This vault ac
 
 ### Addresses
 
-- **tatara**: `0xAe4b2FCf45566893Ee5009BA36792D5078e4AD60`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xAe4b2FCf45566893Ee5009BA36792D5078e4AD60`](https://explorer.tatara.katana.network/address/0xAe4b2FCf45566893Ee5009BA36792D5078e4AD60)
 
 ### Function signatures
 

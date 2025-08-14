@@ -15,9 +15,7 @@ description: "IUSDTUSDOracle: Interface for USDT/USD Chainlink price oracle on K
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xF03E1566Fc6B0eBFA3dD3aA197759C4c6617ec78`
-- **bokuto**: `null`
+- **katana**: [`0xF03E1566Fc6B0eBFA3dD3aA197759C4c6617ec78`](https://katanascan.com/address/0xF03E1566Fc6B0eBFA3dD3aA197759C4c6617ec78)
 
 ### Function signatures
 

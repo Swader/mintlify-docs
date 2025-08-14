@@ -14,9 +14,7 @@ description: "IBridgeExtension: Interface for the Bridge Extension contract"
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x64B20Eb25AEd030FD510EF93B9135278B152f6a6`
-- **bokuto**: `null`
+- **katana**: [`0x64B20Eb25AEd030FD510EF93B9135278B152f6a6`](https://katanascan.com/address/0x64B20Eb25AEd030FD510EF93B9135278B152f6a6)
 
 ### Function signatures
 

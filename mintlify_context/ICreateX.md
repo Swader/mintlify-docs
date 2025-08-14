@@ -15,9 +15,7 @@ description: "CreateX Factory Interface Definition: Advanced contract deployment
 
 ### Addresses
 
-- **tatara**: `0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed`](https://explorer.tatara.katana.network/address/0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed)
 
 ### Function signatures
 

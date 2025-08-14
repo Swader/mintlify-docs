@@ -14,9 +14,7 @@ description: "ICreate2Deployer: Helper contract for using CREATE2 opcode with ad
 
 ### Addresses
 
-- **tatara**: `0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2`](https://explorer.tatara.katana.network/address/0x13b0D85CcB8bf860b6b79AF3029fCA081AE9beF2)
 
 ### Function signatures
 

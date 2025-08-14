@@ -15,9 +15,8 @@ description: "ICatalogFactory: Factory to create Catalog instances, necessary to
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3`
-- **bokuto**: `0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3`
+- **katana**: [`0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3`](https://katanascan.com/address/0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3)
+- **bokuto**: [`0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3`](https://explorer-bokuto.katanarpc.com/address/0xC0137140B2D2a146d20dBbb0153e5Ac1048f30E3)
 
 ### Function signatures
 

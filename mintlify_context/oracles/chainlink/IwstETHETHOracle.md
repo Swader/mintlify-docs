@@ -15,9 +15,7 @@ description: "IwstETHETHOracle: Interface for wstETH/ETH Chainlink price oracle 
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xCB568C33EA2B0B81852655d722E3a52d9D44e7De`
-- **bokuto**: `null`
+- **katana**: [`0xCB568C33EA2B0B81852655d722E3a52d9D44e7De`](https://katanascan.com/address/0xCB568C33EA2B0B81852655d722E3a52d9D44e7De)
 
 ### Function signatures
 

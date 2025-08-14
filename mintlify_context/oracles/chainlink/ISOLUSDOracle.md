@@ -15,9 +15,7 @@ description: "ISOLUSDOracle: Interface for SOL/USD Chainlink price oracle on Kat
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x709c4dc298322916eaE59bfdc2e3d750B55C864B`
-- **bokuto**: `null`
+- **katana**: [`0x709c4dc298322916eaE59bfdc2e3d750B55C864B`](https://katanascan.com/address/0x709c4dc298322916eaE59bfdc2e3d750B55C864B)
 
 ### Function signatures
 

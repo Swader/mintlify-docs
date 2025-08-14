@@ -15,9 +15,8 @@ description: "ICatalogUtils: Utility methods to interact with Catalog instances 
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0`
-- **bokuto**: `0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0`
+- **katana**: [`0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0`](https://katanascan.com/address/0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0)
+- **bokuto**: [`0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0`](https://explorer-bokuto.katanarpc.com/address/0xB1e10B768E9d56A51f1C80d70414989ECAf87fd0)
 
 ### ABI
 

@@ -14,9 +14,7 @@ description: "IMultiSendCallOnly: This contract allows batching multiple transac
 
 ### Addresses
 
-- **tatara**: `0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B`](https://explorer.tatara.katana.network/address/0xA1dabEF33b3B82c7814B6D82A79e50F4AC44102B)
 
 ### Function signatures
 

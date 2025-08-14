@@ -15,9 +15,7 @@ description: "IYFI: Interface for Bridge-wrapped Yearn Finance (YFI) on Katana (
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x476eaCd417cD65421bD34fca054377658BB5E02b`
-- **bokuto**: `null`
+- **katana**: [`0x476eaCd417cD65421bD34fca054377658BB5E02b`](https://katanascan.com/address/0x476eaCd417cD65421bD34fca054377658BB5E02b)
 
 ### Function signatures
 

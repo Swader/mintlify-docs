@@ -15,9 +15,7 @@ description: "IPermit2: Comprehensive interface for Uniswap's Permit2 system, co
 
 ### Addresses
 
-- **tatara**: `0x000000000022D473030F116dDEE9F6B43aC78BA3`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x000000000022D473030F116dDEE9F6B43aC78BA3`](https://explorer.tatara.katana.network/address/0x000000000022D473030F116dDEE9F6B43aC78BA3)
 
 ### Function signatures
 

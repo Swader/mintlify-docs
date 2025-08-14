@@ -15,9 +15,7 @@ description: "ILINKUSDOracle: Interface for LINK/USD Chainlink price oracle on K
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x06bD6464e94Bee9393Ae15B5Dd5eCDFAa4F299C1`
-- **bokuto**: `null`
+- **katana**: [`0x06bD6464e94Bee9393Ae15B5Dd5eCDFAa4F299C1`](https://katanascan.com/address/0x06bD6464e94Bee9393Ae15B5Dd5eCDFAa4F299C1)
 
 ### Function signatures
 

@@ -11,9 +11,9 @@ description: "Documentation for Multicall2 at MultiCall2.sol"
 
 ### Addresses
 
-- **tatara**: `0xfC0F3dADD7aE3708f352610aa71dF7C93087a676`
-- **katana**: `0xe9128E672bc08E12deb1C2048E9f91e6D6E08e74`
-- **bokuto**: `0xafc9dD4B1416f61c86A5540423D29abdFf665dbB`
+- **tatara**: [`0xfC0F3dADD7aE3708f352610aa71dF7C93087a676`](https://explorer.tatara.katana.network/address/0xfC0F3dADD7aE3708f352610aa71dF7C93087a676)
+- **katana**: [`0xe9128E672bc08E12deb1C2048E9f91e6D6E08e74`](https://katanascan.com/address/0xe9128E672bc08E12deb1C2048E9f91e6D6E08e74)
+- **bokuto**: [`0xafc9dD4B1416f61c86A5540423D29abdFf665dbB`](https://explorer-bokuto.katanarpc.com/address/0xafc9dD4B1416f61c86A5540423D29abdFf665dbB)
 
 ### Function signatures
 

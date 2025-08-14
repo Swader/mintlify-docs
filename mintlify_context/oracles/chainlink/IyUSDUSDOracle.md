@@ -15,9 +15,7 @@ description: "IyUSDUSDOracle: Interface for yUSD/USD Chainlink price oracle on K
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xe61b585418B92917771c89D4d3957707cfFE6154`
-- **bokuto**: `null`
+- **katana**: [`0xe61b585418B92917771c89D4d3957707cfFE6154`](https://katanascan.com/address/0xe61b585418B92917771c89D4d3957707cfFE6154)
 
 ### Function signatures
 

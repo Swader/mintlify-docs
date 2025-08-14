@@ -15,9 +15,9 @@ description: "IbvbWBTC: Interface for the Bridged Vault Bridge WBTC token. This 
 
 ### Addresses
 
-- **tatara**: `0x1538aDF273f6f13CcdcdBa41A5ce4b2DC2177D1C`
-- **katana**: `0x0913DA6Da4b42f538B445599b46Bb4622342Cf52`
-- **bokuto**: `0xe8255B44634b478aB10a649c6C207A654473dbed`
+- **tatara**: [`0x1538aDF273f6f13CcdcdBa41A5ce4b2DC2177D1C`](https://explorer.tatara.katana.network/address/0x1538aDF273f6f13CcdcdBa41A5ce4b2DC2177D1C)
+- **katana**: [`0x0913DA6Da4b42f538B445599b46Bb4622342Cf52`](https://katanascan.com/address/0x0913DA6Da4b42f538B445599b46Bb4622342Cf52)
+- **bokuto**: [`0xe8255B44634b478aB10a649c6C207A654473dbed`](https://explorer-bokuto.katanarpc.com/address/0xe8255B44634b478aB10a649c6C207A654473dbed)
 
 ### Function signatures
 

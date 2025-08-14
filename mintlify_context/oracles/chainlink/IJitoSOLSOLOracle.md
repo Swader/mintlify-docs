@@ -15,9 +15,7 @@ description: "IJitoSOLSOLOracle: Interface for jitoSOL/SOL Chainlink price oracl
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x1C0a310cf42F357087Be122e69ee402D19A265dC`
-- **bokuto**: `null`
+- **katana**: [`0x1C0a310cf42F357087Be122e69ee402D19A265dC`](https://katanascan.com/address/0x1C0a310cf42F357087Be122e69ee402D19A265dC)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "ISushiV3Factory: Interface for SushiSwap V3 Factory contract (Fact
 
 ### Addresses
 
-- **tatara**: `0x9B3336186a38E1b6c21955d112dbb0343Ee061eE`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x9B3336186a38E1b6c21955d112dbb0343Ee061eE`](https://explorer.tatara.katana.network/address/0x9B3336186a38E1b6c21955d112dbb0343Ee061eE)
 
 ### Function signatures
 

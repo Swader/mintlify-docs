@@ -15,9 +15,7 @@ description: "IuSOL: Interface for Universal SOL (uSOL), the Universal wrapped S
 
 ### Addresses
 
-- **tatara**: `0x79b2417686870EFf463E37a1cA0fDA1c7e2442cE`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x79b2417686870EFf463E37a1cA0fDA1c7e2442cE`](https://explorer.tatara.katana.network/address/0x79b2417686870EFf463E37a1cA0fDA1c7e2442cE)
 
 ### Function signatures
 

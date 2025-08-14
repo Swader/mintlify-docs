@@ -15,9 +15,7 @@ description: "IuXRP: Interface for Universal XRP (uXRP), the Universal wrapped X
 
 ### Addresses
 
-- **tatara**: `0x26435983DF976A02C55aC28e6F67C6477bBd95E7`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x26435983DF976A02C55aC28e6F67C6477bBd95E7`](https://explorer.tatara.katana.network/address/0x26435983DF976A02C55aC28e6F67C6477bBd95E7)
 
 ### Function signatures
 

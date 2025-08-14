@@ -15,9 +15,9 @@ description: "IUSDCNativeConverter: Interface for the USDC Native Converter (Con
 
 ### Addresses
 
-- **tatara**: `0x28FDCaF075242719b16D342866c9dd84cC459533`
-- **katana**: `0x97a3500083348A147F419b8a65717909762c389f`
-- **bokuto**: `0xF1b01AAB6B790bb15610Dc18c6908b32765B5a06`
+- **tatara**: [`0x28FDCaF075242719b16D342866c9dd84cC459533`](https://explorer.tatara.katana.network/address/0x28FDCaF075242719b16D342866c9dd84cC459533)
+- **katana**: [`0x97a3500083348A147F419b8a65717909762c389f`](https://katanascan.com/address/0x97a3500083348A147F419b8a65717909762c389f)
+- **bokuto**: [`0xF1b01AAB6B790bb15610Dc18c6908b32765B5a06`](https://explorer-bokuto.katanarpc.com/address/0xF1b01AAB6B790bb15610Dc18c6908b32765B5a06)
 
 ### Function signatures
 

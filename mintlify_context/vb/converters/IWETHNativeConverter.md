@@ -15,9 +15,9 @@ description: "IWETHNativeConverter: Interface for the WETH Native Converter (Con
 
 ### Addresses
 
-- **tatara**: `0x3aFbD158CF7B1E6BE4dAC88bC173FA65EBDf2EcD`
-- **katana**: `0xa6B0DB1293144Ebe9478B6a84F75dd651E45914a`
-- **bokuto**: `0x409834270b6F2591DD6c1e9f351E4194B112dA44`
+- **tatara**: [`0x3aFbD158CF7B1E6BE4dAC88bC173FA65EBDf2EcD`](https://explorer.tatara.katana.network/address/0x3aFbD158CF7B1E6BE4dAC88bC173FA65EBDf2EcD)
+- **katana**: [`0xa6B0DB1293144Ebe9478B6a84F75dd651E45914a`](https://katanascan.com/address/0xa6B0DB1293144Ebe9478B6a84F75dd651E45914a)
+- **bokuto**: [`0x409834270b6F2591DD6c1e9f351E4194B112dA44`](https://explorer-bokuto.katanarpc.com/address/0x409834270b6F2591DD6c1e9f351E4194B112dA44)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IwstETHstETHOracle: Interface for wstETH/stETH RedStone price orac
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x31a36CdF4465ba61ce78F5CDbA26FDF8ec361803`
-- **bokuto**: `null`
+- **katana**: [`0x31a36CdF4465ba61ce78F5CDbA26FDF8ec361803`](https://katanascan.com/address/0x31a36CdF4465ba61ce78F5CDbA26FDF8ec361803)
 
 ### Function signatures
 

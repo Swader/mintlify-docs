@@ -14,9 +14,7 @@ description: "IBundler3: Interface for the Bundler3 contract, which enables batc
 
 ### Addresses
 
-- **tatara**: `0xD0bDf3E62F6750Bd83A50b4001743898Af287009`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xD0bDf3E62F6750Bd83A50b4001743898Af287009`](https://explorer.tatara.katana.network/address/0xD0bDf3E62F6750Bd83A50b4001743898Af287009)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "ISushiRouter: Interface for SushiSwap's router contract (Provides 
 
 ### Addresses
 
-- **tatara**: `0xAC4c6e212A361c968F1725b4d055b47E63F80b75`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xAC4c6e212A361c968F1725b4d055b47E63F80b75`](https://explorer.tatara.katana.network/address/0xAC4c6e212A361c968F1725b4d055b47E63F80b75)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IEntryPoint v0.7.0: Account-Abstraction (EIP-4337) singleton Entry
 
 ### Addresses
 
-- **tatara**: `0x0000000071727De22E5E9d8BAf0edAc6f37da032`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x0000000071727De22E5E9d8BAf0edAc6f37da032`](https://explorer.tatara.katana.network/address/0x0000000071727De22E5E9d8BAf0edAc6f37da032)
 
 ### ABI
 

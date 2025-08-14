@@ -15,9 +15,7 @@ description: "IWBTCBTCOracle: Interface for WBTC/BTC Chainlink price oracle on K
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xAd2937e7D25c237856B03319265465C0291b1895`
-- **bokuto**: `null`
+- **katana**: [`0xAd2937e7D25c237856B03319265465C0291b1895`](https://katanascan.com/address/0xAd2937e7D25c237856B03319265465C0291b1895)
 
 ### Function signatures
 

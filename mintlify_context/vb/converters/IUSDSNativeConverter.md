@@ -15,9 +15,9 @@ description: "IUSDSNativeConverter: Interface for the USDS Native Converter (Con
 
 ### Addresses
 
-- **tatara**: `0x56342E6093381E2Bd732FFd6141b22136efB98Bf`
-- **katana**: `0x639f13D5f30B47c792b6851238c05D0b623C77DE`
-- **bokuto**: `0xC4BaBEE541c2FA1EA55ce9aF9EB3B5C76B0CE5c7`
+- **tatara**: [`0x56342E6093381E2Bd732FFd6141b22136efB98Bf`](https://explorer.tatara.katana.network/address/0x56342E6093381E2Bd732FFd6141b22136efB98Bf)
+- **katana**: [`0x639f13D5f30B47c792b6851238c05D0b623C77DE`](https://katanascan.com/address/0x639f13D5f30B47c792b6851238c05D0b623C77DE)
+- **bokuto**: [`0xC4BaBEE541c2FA1EA55ce9aF9EB3B5C76B0CE5c7`](https://explorer-bokuto.katanarpc.com/address/0xC4BaBEE541c2FA1EA55ce9aF9EB3B5C76B0CE5c7)
 
 ### Function signatures
 

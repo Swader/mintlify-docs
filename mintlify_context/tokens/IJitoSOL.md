@@ -15,9 +15,7 @@ description: "IJitoSOL: Interface for Jito Staked SOL (JitoSOL) on Katana (JitoS
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x6C16E26013f2431e8B2e1Ba7067ECCcad0Db6C52`
-- **bokuto**: `null`
+- **katana**: [`0x6C16E26013f2431e8B2e1Ba7067ECCcad0Db6C52`](https://katanascan.com/address/0x6C16E26013f2431e8B2e1Ba7067ECCcad0Db6C52)
 
 ### Function signatures
 

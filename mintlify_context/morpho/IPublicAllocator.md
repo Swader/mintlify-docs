@@ -14,9 +14,7 @@ description: "IPublicAllocator: Interface for PublicAllocator, which enables per
 
 ### Addresses
 
-- **tatara**: `0x8FfD3815919081bDb60CD8079C68444331B65042`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x8FfD3815919081bDb60CD8079C68444331B65042`](https://explorer.tatara.katana.network/address/0x8FfD3815919081bDb60CD8079C68444331B65042)
 
 ### Function signatures
 

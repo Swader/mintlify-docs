@@ -21,6 +21,9 @@ description: "IvbWBTC: Interface for the Vault Bridge WBTC token. This is deploy
 
 ### Origin addresses
 
+- **tatara**: sepolia (tatara) – [`0xa278D086289f71a30D237feccBAF3698E43Bc5D6`](https://sepolia.etherscan.io/address/0xa278D086289f71a30D237feccBAF3698E43Bc5D6)
+- **katana**: ethereum (katana) – [`0x2C24B57e2CCd1f273045Af6A5f632504C432374F`](https://etherscan.io/address/0x2C24B57e2CCd1f273045Af6A5f632504C432374F)
+- **bokuto**: sepolia (bokuto) – [`0x2CE29070ee5e65C4191d5Efca8E85be181F34B6d`](https://sepolia.etherscan.io/address/0x2CE29070ee5e65C4191d5Efca8E85be181F34B6d)
 
 ### Function signatures
 

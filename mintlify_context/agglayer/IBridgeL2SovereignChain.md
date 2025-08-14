@@ -15,9 +15,7 @@ description: "IBridgeL2SovereignChain: Interface for the BridgeL2SovereignChain 
 
 ### Addresses
 
-- **tatara**: `0x528e26b25a34a4A5d0dbDa1d57D318153d2ED582`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x528e26b25a34a4A5d0dbDa1d57D318153d2ED582`](https://explorer.tatara.katana.network/address/0x528e26b25a34a4A5d0dbDa1d57D318153d2ED582)
 
 ### Function signatures
 

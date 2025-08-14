@@ -14,9 +14,7 @@ description: "IMetaMorphoFactory: Interface for MetaMorpho Factory, which create
 
 ### Addresses
 
-- **tatara**: `0x505619071bdCDeA154f164b323B6C42Fc14257f7`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x505619071bdCDeA154f164b323B6C42Fc14257f7`](https://explorer.tatara.katana.network/address/0x505619071bdCDeA154f164b323B6C42Fc14257f7)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "ILBTCBTCOracle: Interface for LBTC/BTC RedStone price oracle on Ka
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xb9D0073aCb296719C26a8BF156e4b599174fe1d5`
-- **bokuto**: `null`
+- **katana**: [`0xb9D0073aCb296719C26a8BF156e4b599174fe1d5`](https://katanascan.com/address/0xb9D0073aCb296719C26a8BF156e4b599174fe1d5)
 
 ### Function signatures
 

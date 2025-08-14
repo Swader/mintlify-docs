@@ -15,9 +15,7 @@ description: "IAUSDUSDOracle: Interface for AUSD/USD RedStone price oracle on Ka
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x53bB139e962ee0AC6477F40D0352e8dAF0480b70`
-- **bokuto**: `null`
+- **katana**: [`0x53bB139e962ee0AC6477F40D0352e8dAF0480b70`](https://katanascan.com/address/0x53bB139e962ee0AC6477F40D0352e8dAF0480b70)
 
 ### Function signatures
 

@@ -15,9 +15,7 @@ description: "IBTCK: Interface for Bitcoin on Katana (BTCK) on Katana (BTCK impl
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072`
-- **bokuto**: `null`
+- **katana**: [`0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072`](https://katanascan.com/address/0xB0F70C0bD6FD87dbEb7C10dC692a2a6106817072)
 
 ### Function signatures
 

@@ -15,9 +15,9 @@ description: "IbvbUSDS: Interface for the Bridged Vault Bridge USDS token. This 
 
 ### Addresses
 
-- **tatara**: `0xD416d04845d299bCC0e5105414C99fFc88f0C97d`
-- **katana**: `0x62D6A123E8D19d06d68cf0d2294F9A3A0362c6b3`
-- **bokuto**: `0x801f719178d9b85D4948ed146C50596273885a75`
+- **tatara**: [`0xD416d04845d299bCC0e5105414C99fFc88f0C97d`](https://explorer.tatara.katana.network/address/0xD416d04845d299bCC0e5105414C99fFc88f0C97d)
+- **katana**: [`0x62D6A123E8D19d06d68cf0d2294F9A3A0362c6b3`](https://katanascan.com/address/0x62D6A123E8D19d06d68cf0d2294F9A3A0362c6b3)
+- **bokuto**: [`0x801f719178d9b85D4948ed146C50596273885a75`](https://explorer-bokuto.katanarpc.com/address/0x801f719178d9b85D4948ed146C50596273885a75)
 
 ### Function signatures
 

@@ -14,9 +14,7 @@ description: "IMultiSend: This contract allows batching multiple transactions in
 
 ### Addresses
 
-- **tatara**: `0x998739BFdAAdde7C933B942a68053933098f9EDa`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0x998739BFdAAdde7C933B942a68053933098f9EDa`](https://explorer.tatara.katana.network/address/0x998739BFdAAdde7C933B942a68053933098f9EDa)
 
 ### Function signatures
 

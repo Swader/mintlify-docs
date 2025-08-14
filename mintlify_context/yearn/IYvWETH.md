@@ -15,9 +15,7 @@ description: "IYvWETH: Interface for the Yearn WETH ERC4626 vault (This vault ac
 
 ### Addresses
 
-- **tatara**: `0xccC0Fc2E34428120f985b460b487eB79E3C6FA57`
-- **katana**: `null`
-- **bokuto**: `null`
+- **tatara**: [`0xccC0Fc2E34428120f985b460b487eB79E3C6FA57`](https://explorer.tatara.katana.network/address/0xccC0Fc2E34428120f985b460b487eB79E3C6FA57)
 
 ### Function signatures
 

@@ -20,6 +20,8 @@ description: "IMigrationManager: Interface for the Migration Manager contract. T
 
 ### Origin addresses
 
+- **katana**: ethereum (katana) – [`0x417d01B64Ea30C4E163873f3a1f77b727c689e02`](https://etherscan.io/address/0x417d01B64Ea30C4E163873f3a1f77b727c689e02)
+- **bokuto**: sepolia (bokuto) – [`0x16B46094cb1eE593181Ba2d997E77E88D7E9Ab8F`](https://sepolia.etherscan.io/address/0x16B46094cb1eE593181Ba2d997E77E88D7E9Ab8F)
 
 ### Function signatures
 

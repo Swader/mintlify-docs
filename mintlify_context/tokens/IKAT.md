@@ -15,9 +15,7 @@ description: "IKAT: Interface for KAT, the native token on Katana (KAT implement
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x7F1f4b4b29f5058fA32CC7a97141b8D7e5ABDC2d`
-- **bokuto**: `null`
+- **katana**: [`0x7F1f4b4b29f5058fA32CC7a97141b8D7e5ABDC2d`](https://katanascan.com/address/0x7F1f4b4b29f5058fA32CC7a97141b8D7e5ABDC2d)
 
 ### Function signatures
 

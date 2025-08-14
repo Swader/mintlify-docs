@@ -15,9 +15,7 @@ description: "ISUSHIUSDOracle: Interface for SUSHI/USD Chainlink price oracle on
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xA30C356781E5e1b455b274cdDe524FB7BF3809da`
-- **bokuto**: `null`
+- **katana**: [`0xA30C356781E5e1b455b274cdDe524FB7BF3809da`](https://katanascan.com/address/0xA30C356781E5e1b455b274cdDe524FB7BF3809da)
 
 ### Function signatures
 

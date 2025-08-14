@@ -15,9 +15,7 @@ description: "IBTCUSDOracle: Interface for BTC/USD Chainlink price oracle on Kat
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xb67047eDF6204F4C81333248dA71F8387050790C`
-- **bokuto**: `null`
+- **katana**: [`0xb67047eDF6204F4C81333248dA71F8387050790C`](https://katanascan.com/address/0xb67047eDF6204F4C81333248dA71F8387050790C)
 
 ### Function signatures
 

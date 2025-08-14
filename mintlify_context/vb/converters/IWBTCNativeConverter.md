@@ -15,9 +15,9 @@ description: "IWBTCNativeConverter: Interface for the WBTC Native Converter (Con
 
 ### Addresses
 
-- **tatara**: `0x3Ef265DD0b4B86fC51b08D5B03699E57d52C9B27`
-- **katana**: `0xb00aa68b87256E2F22058fB2Ba3246EEc54A44fc`
-- **bokuto**: `0x7A8ed27F4C30512326878652d20fC85727401854`
+- **tatara**: [`0x3Ef265DD0b4B86fC51b08D5B03699E57d52C9B27`](https://explorer.tatara.katana.network/address/0x3Ef265DD0b4B86fC51b08D5B03699E57d52C9B27)
+- **katana**: [`0xb00aa68b87256E2F22058fB2Ba3246EEc54A44fc`](https://katanascan.com/address/0xb00aa68b87256E2F22058fB2Ba3246EEc54A44fc)
+- **bokuto**: [`0x7A8ed27F4C30512326878652d20fC85727401854`](https://explorer-bokuto.katanarpc.com/address/0x7A8ed27F4C30512326878652d20fC85727401854)
 
 ### Function signatures
 

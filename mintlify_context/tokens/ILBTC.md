@@ -15,9 +15,7 @@ description: "ILBTC: Interface for Lombard Staked BTC (LBTC) on Katana (LBTC imp
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xecAc9C5F704e954931349Da37F60E39f515c11c1`
-- **bokuto**: `null`
+- **katana**: [`0xecAc9C5F704e954931349Da37F60E39f515c11c1`](https://katanascan.com/address/0xecAc9C5F704e954931349Da37F60E39f515c11c1)
 
 ### Function signatures
 

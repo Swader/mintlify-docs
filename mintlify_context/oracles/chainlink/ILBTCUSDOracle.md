@@ -15,9 +15,7 @@ description: "ILBTCUSDOracle: Interface for LBTC/USD Chainlink price oracle on K
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0x5C2c6A77310C7750fCc5c3f13a3f9C3b18a68d3e`
-- **bokuto**: `null`
+- **katana**: [`0x5C2c6A77310C7750fCc5c3f13a3f9C3b18a68d3e`](https://katanascan.com/address/0x5C2c6A77310C7750fCc5c3f13a3f9C3b18a68d3e)
 
 ### Function signatures
 

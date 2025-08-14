@@ -15,9 +15,7 @@ description: "IweETHETHOracle: Interface for weETH/ETH RedStone price oracle on 
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xe8D9FbC10e00ecc9f0694617075fDAF657a76FB2`
-- **bokuto**: `null`
+- **katana**: [`0xe8D9FbC10e00ecc9f0694617075fDAF657a76FB2`](https://katanascan.com/address/0xe8D9FbC10e00ecc9f0694617075fDAF657a76FB2)
 
 ### Function signatures
 

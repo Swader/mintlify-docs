@@ -21,6 +21,9 @@ description: "IvbUSDT: Interface for the Vault Bridge USDT token. This is deploy
 
 ### Origin addresses
 
+- **tatara**: sepolia (tatara) – [`0xb3f50565f611D645e0DDB44eB09c4588B1601514`](https://sepolia.etherscan.io/address/0xb3f50565f611D645e0DDB44eB09c4588B1601514)
+- **katana**: ethereum (katana) – [`0x6d4f9f9f8f0155509ecd6Ac6c544fF27999845CC`](https://etherscan.io/address/0x6d4f9f9f8f0155509ecd6Ac6c544fF27999845CC)
+- **bokuto**: sepolia (bokuto) – [`0xdd9aCdD3D2AeC1C823C51f8389597C6be9779B28`](https://sepolia.etherscan.io/address/0xdd9aCdD3D2AeC1C823C51f8389597C6be9779B28)
 
 ### Function signatures
 

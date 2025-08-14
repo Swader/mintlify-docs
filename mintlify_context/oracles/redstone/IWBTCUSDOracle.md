@@ -15,9 +15,7 @@ description: "IWBTCUSDOracle: Interface for WBTC/USD RedStone price oracle on Ka
 
 ### Addresses
 
-- **tatara**: `null`
-- **katana**: `0xE5E307A3aEDf4e8eF60E1bfCc9ccD477dFad93ce`
-- **bokuto**: `null`
+- **katana**: [`0xE5E307A3aEDf4e8eF60E1bfCc9ccD477dFad93ce`](https://katanascan.com/address/0xE5E307A3aEDf4e8eF60E1bfCc9ccD477dFad93ce)
 
 ### Function signatures
 
