@@ -1,0 +1,44 @@
+/* Make Ask AI button more prominent and larger */
+#assistant-entry {
+    background-color: rgb(var(--primary)) !important; /* Use primary blue for standout */
+    color: white !important;
+    font-weight: 600 !important; /* Bolder text */
+    height: 2.75rem !important; /* Even taller for more prominence */
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Subtle shadow for depth */
+    ring: none !important; /* Remove default ring */
+    transition: background-color 0.2s, transform 0.2s !important;
+  }
+  
+  #assistant-entry:hover {
+    background-color: rgb(var(--primary-dark)) !important; /* Darker on hover */
+    transform: scale(1.05) !important; /* Slight zoom for emphasis */
+  }
+  
+  #assistant-entry svg {
+    color: white !important; /* Ensure icon is white */
+  }
+  
+  #assistant-entry span {
+    color: white !important; /* Ensure text is white */
+  }
+  
+  /* De-emphasize and make search input smaller */
+  #search-bar-entry {
+    opacity: 0.7 !important; /* Slightly faded */
+    height: 1.75rem !important; /* Even smaller */
+    font-size: 0.8rem !important; /* Smaller text */
+    background-color: rgb(var(--gray-100)/0.5) !important; /* Lighter, less noticeable bg */
+  }
+  
+  #search-bar-entry:hover {
+    ring: none !important; /* Reduce hover ring */
+    background-color: rgb(var(--gray-100)/0.7) !important; /* Subtle hover change */
+  }
+  
+  /* Optional: Adjust container to give AI more space if needed */
+  .relative.hidden.lg\:flex.items-center.gap-2\.5.flex-1 {
+    flex-direction: row-reverse !important; /* Swap positions: AI first, search second */
+    justify-content: flex-end !important; /* Push to right if space allows */
+  }
