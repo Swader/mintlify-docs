@@ -1,0 +1,179 @@
+---
+title: "IPolygonZkEVMDeployer"
+description: "IPolygonZkEVMDeployer: Interface for the PolygonZkEVMDeployer contract which manages deployments of rollup components"
+---
+
+### Overview
+
+- **name**: IPolygonZkEVMDeployer
+- **path**: `agglayer/IPolygonZkEVMDeployer.sol`
+- **context**: agglayer
+- **tags**: agglayer, polygon, deployment, zkevm, rollup
+- **title**: IPolygonZkEVMDeployer
+- **notice**: Interface for the PolygonZkEVMDeployer contract which manages deployments of rollup components
+
+### Addresses
+
+- **tatara**: `0x36810012486fc134D0679c07f85fe5ba5A087D8C`
+- **katana**: `null`
+- **bokuto**: `null`
+
+### Function signatures
+
+```
+chainID()
+gasTokenAddress()
+gasTokenMetadata()
+gasTokenNetwork()
+initialize(address,uint64,string,address,uint32,bytes,address)
+isAdmin(address)
+rollupVerifier()
+version()
+```
+
+### ABI
+
+```json
+[
+  {
+    "inputs": [],
+    "name": "chainID",
+    "outputs": [
+      {
+        "internalType": "uint64",
+        "name": "",
+        "type": "uint64"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gasTokenAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gasTokenMetadata",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "",
+        "type": "bytes"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gasTokenNetwork",
+    "outputs": [
+      {
+        "internalType": "uint32",
+        "name": "",
+        "type": "uint32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_admin",
+        "type": "address"
+      },
+      {
+        "internalType": "uint64",
+        "name": "_chainID",
+        "type": "uint64"
+      },
+      {
+        "internalType": "string",
+        "name": "_version",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "_gasTokenAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "uint32",
+        "name": "_gasTokenNetwork",
+        "type": "uint32"
+      },
+      {
+        "internalType": "bytes",
+        "name": "_gasTokenMetadata",
+        "type": "bytes"
+      },
+      {
+        "internalType": "address",
+        "name": "_rollupVerifier",
+        "type": "address"
+      }
+    ],
+    "name": "initialize",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "isAdmin",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "rollupVerifier",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "version",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+```
