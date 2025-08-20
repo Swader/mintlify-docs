@@ -42,6 +42,228 @@
             "cursor"
           ]}
         ]
+      },
+      {
+        "tab": "Contracts",
+        "pages": [
+          "mintlify_context/index",
+          "mintlify_context/IAgoraFaucet",
+          "mintlify_context/IBatchDistributor",
+          "mintlify_context/IBundler3",
+          "mintlify_context/ICreate2Deployer",
+          "mintlify_context/ICreateX",
+          "mintlify_context/IDeterministicDeploymentProxy",
+          "mintlify_context/IERC20",
+          "mintlify_context/IERC4337Common",
+          "mintlify_context/IERC4626",
+          "mintlify_context/IGnosisSafe",
+          "mintlify_context/IGnosisSafeL2",
+          "mintlify_context/ILxLyBridge",
+          "mintlify_context/IMulticall3",
+          "mintlify_context/IMultiSend",
+          "mintlify_context/IMultiSendCallOnly",
+          "mintlify_context/IPermit2",
+          "mintlify_context/IRIP7212",
+          "mintlify_context/ISafeExecutor",
+          "mintlify_context/ISushiRouter",
+          "mintlify_context/Multicall",
+          "mintlify_context/Multicall2"
+        ],
+        "groups": [
+          {
+            "group": "morpho",
+            "pages": [
+              "mintlify_context/morpho/IMetaMorpho",
+              "mintlify_context/morpho/IMetaMorphoFactory",
+              "mintlify_context/morpho/IMorphoAdaptiveIRM",
+              "mintlify_context/morpho/IMorphoBlue",
+              "mintlify_context/morpho/IMorphoChainlinkOracleV2",
+              "mintlify_context/morpho/IMorphoChainlinkOracleV2Factory",
+              "mintlify_context/morpho/IMorphoLiquidateCallback",
+              "mintlify_context/morpho/IMorphoOracle",
+              "mintlify_context/morpho/IPreLiquidation",
+              "mintlify_context/morpho/IPreLiquidationCallback",
+              "mintlify_context/morpho/IPreLiquidationFactory",
+              "mintlify_context/morpho/IPublicAllocator"
+            ]
+          },
+          {
+            "group": "tokens",
+            "pages": [
+              "mintlify_context/tokens/IAUSD",
+              "mintlify_context/tokens/IBTCK",
+              "mintlify_context/tokens/IbvUSD",
+              "mintlify_context/tokens/IJitoSOL",
+              "mintlify_context/tokens/IKAT",
+              "mintlify_context/tokens/ILBTC",
+              "mintlify_context/tokens/IMORPHO",
+              "mintlify_context/tokens/IPOL",
+              "mintlify_context/tokens/ISUSHI",
+              "mintlify_context/tokens/IuBTC",
+              "mintlify_context/tokens/IuSOL",
+              "mintlify_context/tokens/IuSUI",
+              "mintlify_context/tokens/IuXRP",
+              "mintlify_context/tokens/IweETH",
+              "mintlify_context/tokens/IwstETH",
+              "mintlify_context/tokens/IYFI"
+            ]
+          },
+          {
+            "group": "oracles",
+            "groups": [
+              {
+                "group": "chainlink",
+                "pages": [
+                  "mintlify_context/oracles/chainlink/IAggregatorV3Interface",
+                  "mintlify_context/oracles/chainlink/IAUSDUSDOracle",
+                  "mintlify_context/oracles/chainlink/IBTCUSDOracle",
+                  "mintlify_context/oracles/chainlink/IEACAggregatorProxy",
+                  "mintlify_context/oracles/chainlink/IETHUSDOracle",
+                  "mintlify_context/oracles/chainlink/IJitoSOLSOLOracle",
+                  "mintlify_context/oracles/chainlink/IJitoSOLUSDOracle",
+                  "mintlify_context/oracles/chainlink/ILBTCBTCOracle",
+                  "mintlify_context/oracles/chainlink/ILBTCUSDOracle",
+                  "mintlify_context/oracles/chainlink/ILINKUSDOracle",
+                  "mintlify_context/oracles/chainlink/IMORPHOUSDOracle",
+                  "mintlify_context/oracles/chainlink/IPOLUSDOracle",
+                  "mintlify_context/oracles/chainlink/ISOLUSDOracle",
+                  "mintlify_context/oracles/chainlink/ISUSHIUSDOracle",
+                  "mintlify_context/oracles/chainlink/IUSDCUSDOracle",
+                  "mintlify_context/oracles/chainlink/IUSDSUSDOracle",
+                  "mintlify_context/oracles/chainlink/IUSDTUSDOracle",
+                  "mintlify_context/oracles/chainlink/IWBTCBTCOracle",
+                  "mintlify_context/oracles/chainlink/IWBTCUSDOracle",
+                  "mintlify_context/oracles/chainlink/IweETHETHOracle",
+                  "mintlify_context/oracles/chainlink/IwstETHETHOracle",
+                  "mintlify_context/oracles/chainlink/IYFIUSDOracle",
+                  "mintlify_context/oracles/chainlink/IyUSDUSDOracle"
+                ]
+              },
+              {
+                "group": "redstone",
+                "pages": [
+                  "mintlify_context/oracles/redstone/IADAUSDOracle",
+                  "mintlify_context/oracles/redstone/IAUSDUSDOracle",
+                  "mintlify_context/oracles/redstone/IBTCUSDOracle",
+                  "mintlify_context/oracles/redstone/IETHUSDOracle",
+                  "mintlify_context/oracles/redstone/ILBTCBTCOracle",
+                  "mintlify_context/oracles/redstone/IRedstoneAggregator",
+                  "mintlify_context/oracles/redstone/ISUIUSDOracle",
+                  "mintlify_context/oracles/redstone/IWBTCUSDOracle",
+                  "mintlify_context/oracles/redstone/IweETHETHOracle",
+                  "mintlify_context/oracles/redstone/IweETHUSDOracle",
+                  "mintlify_context/oracles/redstone/IwstETHstETHOracle",
+                  "mintlify_context/oracles/redstone/IwstETHUSDOracle",
+                  "mintlify_context/oracles/redstone/IXRPUSDOracle"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "yearn",
+            "pages": [
+              "mintlify_context/yearn/IYearnVault",
+              "mintlify_context/yearn/IYvAUSD",
+              "mintlify_context/yearn/IYvWETH"
+            ]
+          },
+          {
+            "group": "vb",
+            "pages": [
+              "mintlify_context/vb/IBridgedVaultBridgeEth",
+              "mintlify_context/vb/IGenericCustomToken",
+              "mintlify_context/vb/IMigrationManager",
+              "mintlify_context/vb/INativeConverter",
+              "mintlify_context/vb/IVaultBridgeToken"
+            ],
+            "groups": [
+              {
+                "group": "tokens",
+                "pages": [
+                  "mintlify_context/vb/tokens/IbvbEth",
+                  "mintlify_context/vb/tokens/IbvbUSDC",
+                  "mintlify_context/vb/tokens/IbvbUSDS",
+                  "mintlify_context/vb/tokens/IbvbUSDT",
+                  "mintlify_context/vb/tokens/IbvbWBTC",
+                  "mintlify_context/vb/tokens/IvbETH",
+                  "mintlify_context/vb/tokens/IvbUSDC",
+                  "mintlify_context/vb/tokens/IvbUSDS",
+                  "mintlify_context/vb/tokens/IvbUSDT",
+                  "mintlify_context/vb/tokens/IvbWBTC"
+                ]
+              },
+              {
+                "group": "converters",
+                "pages": [
+                  "mintlify_context/vb/converters/IUSDCNativeConverter",
+                  "mintlify_context/vb/converters/IUSDSNativeConverter",
+                  "mintlify_context/vb/converters/IUSDTNativeConverter",
+                  "mintlify_context/vb/converters/IWBTCNativeConverter",
+                  "mintlify_context/vb/converters/IWETHNativeConverter"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "opensea",
+            "pages": [
+              "mintlify_context/opensea/IConduit",
+              "mintlify_context/opensea/IConduitController",
+              "mintlify_context/opensea/ISeaport"
+            ]
+          },
+          {
+            "group": "AAv0.7.0",
+            "pages": [
+              "mintlify_context/AAv0.7.0/IAccount",
+              "mintlify_context/AAv0.7.0/IEntryPointSimulations",
+              "mintlify_context/AAv0.7.0/ISenderCreator",
+              "mintlify_context/AAv0.7.0/MyInterface"
+            ]
+          },
+          {
+            "group": "AAv0.6.0",
+            "pages": [
+              "mintlify_context/AAv0.6.0/IAccount",
+              "mintlify_context/AAv0.6.0/IEntryPoint",
+              "mintlify_context/AAv0.6.0/ISenderCreator"
+            ]
+          },
+          {
+            "group": "agglayer",
+            "pages": [
+              "mintlify_context/agglayer/IBridgeExtension",
+              "mintlify_context/agglayer/IBridgeL2SovereignChain",
+              "mintlify_context/agglayer/IGlobalExitRootManagerL2SovereignChain",
+              "mintlify_context/agglayer/IPolygonZkEVMDeployer",
+              "mintlify_context/agglayer/IPolygonZkEVMTimelock",
+              "mintlify_context/agglayer/IProxyAdmin"
+            ]
+          },
+          {
+            "group": "nft",
+            "pages": [
+              "mintlify_context/nft/IBulkWriter",
+              "mintlify_context/nft/ICatalogFactory",
+              "mintlify_context/nft/ICatalogUtils",
+              "mintlify_context/nft/IRenderUtils",
+              "mintlify_context/nft/ITokenAttributesRepository"
+            ]
+          },
+          {
+            "group": "sushi",
+            "pages": [
+              "mintlify_context/sushi/IBladePoolRegister",
+              "mintlify_context/sushi/IRedSnwapper",
+              "mintlify_context/sushi/IRouteProcessor8",
+              "mintlify_context/sushi/ISushiTickLens",
+              "mintlify_context/sushi/ISushiV2Factory",
+              "mintlify_context/sushi/SushiV3Factory",
+              "mintlify_context/sushi/SushiV3PositionManager",
+              "mintlify_context/sushi/UniswapV2Router02"
+            ]
+          }
+        ]
       }
     ],
     "global": {
