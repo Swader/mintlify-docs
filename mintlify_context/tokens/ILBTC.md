@@ -17,6 +17,10 @@ description: "ILBTC: Interface for Lombard Staked BTC (LBTC) on Katana (LBTC imp
 
 - **katana**: [`0xecAc9C5F704e954931349Da37F60E39f515c11c1`](https://katanascan.com/address/0xecAc9C5F704e954931349Da37F60E39f515c11c1)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0x8236a87084f8b84306f72007f36f2618a5634494`](https://etherscan.io/address/0x8236a87084f8b84306f72007f36f2618a5634494)
+
 ### Function signatures
 
 ```

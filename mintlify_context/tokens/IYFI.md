@@ -17,6 +17,10 @@ description: "IYFI: Interface for Bridge-wrapped Yearn Finance (YFI) on Katana (
 
 - **katana**: [`0x476eaCd417cD65421bD34fca054377658BB5E02b`](https://katanascan.com/address/0x476eaCd417cD65421bD34fca054377658BB5E02b)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e`](https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e)
+
 ### Function signatures
 
 ```

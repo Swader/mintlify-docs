@@ -1,25 +1,25 @@
 ---
-title: "IMORPHO"
-description: "IMORPHO: Interface for Bridge-wrapped MORPHO (MORPHO) on Katana (MORPHO implements the standard ERC-20 interface)"
+title: "IPROVE"
+description: "IPROVE: Interface for Bridge-wrapped Succinct (PROVE) on Katana (PROVE implements the standard ERC-20 interface)"
 ---
 
 ### Overview
 
-- **name**: IMORPHO
-- **path**: `tokens/IMORPHO.sol`
-- **context**: morpho
-- **tags**: erc20, token, governance, morpho
-- **title**: IMORPHO
-- **notice**: Interface for Bridge-wrapped MORPHO (MORPHO) on Katana
-- **dev**: MORPHO implements the standard ERC-20 interface
+- **name**: IPROVE
+- **path**: `tokens/IPROVE.sol`
+- **context**: erc20
+- **tags**: erc20, token, polygon, succinct, prove
+- **title**: IPROVE
+- **notice**: Interface for Bridge-wrapped Succinct (PROVE) on Katana
+- **dev**: PROVE implements the standard ERC-20 interface
 
 ### Addresses
 
-- **katana**: [`0x1e5eFCA3D0dB2c6d5C67a4491845c43253eB9e4e`](https://katanascan.com/address/0x1e5eFCA3D0dB2c6d5C67a4491845c43253eB9e4e)
+- **katana**: [`0xb244Add9FE6cB17558221e4Dfea960e680CCD29b`](https://katanascan.com/address/0xb244Add9FE6cB17558221e4Dfea960e680CCD29b)
 
 ### Origin addresses
 
-- **katana**: ethereum (katana) – [`0x58d97b57bb95320f9a05dc918aef65434969c2b2`](https://etherscan.io/address/0x58d97b57bb95320f9a05dc918aef65434969c2b2)
+- **katana**: ethereum (katana) – [`0x6bef15d938d4e72056ac92ea4bdd0d76b1c4ad29`](https://etherscan.io/address/0x6bef15d938d4e72056ac92ea4bdd0d76b1c4ad29)
 
 ### Function signatures
 

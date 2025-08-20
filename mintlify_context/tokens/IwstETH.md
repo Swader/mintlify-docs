@@ -17,6 +17,10 @@ description: "IwstETH: Interface for Bridge-wrapped wstETH (wstETH) on Katana (w
 
 - **katana**: [`0x7Fb4D0f51544F24F385a421Db6e7D4fC71Ad8e5C`](https://katanascan.com/address/0x7Fb4D0f51544F24F385a421Db6e7D4fC71Ad8e5C)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0`](https://etherscan.io/address/0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0)
+
 ### Function signatures
 
 ```

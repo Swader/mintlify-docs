@@ -17,6 +17,10 @@ description: "IPOL: Interface for Bridge-wrapped POL (POL) on Katana (POL implem
 
 - **katana**: [`0xb24e3035d1FCBC0E43CF3143C3Fd92E53df2009b`](https://katanascan.com/address/0xb24e3035d1FCBC0E43CF3143C3Fd92E53df2009b)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6`](https://etherscan.io/address/0x455e53CBB86018Ac2B8092FdCd39d8444aFFC3F6)
+
 ### Function signatures
 
 ```

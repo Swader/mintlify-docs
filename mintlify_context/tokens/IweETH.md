@@ -17,6 +17,10 @@ description: "IweETH: Interface for Bridge-wrapped weETH (weETH) on Katana (weET
 
 - **katana**: [`0x9893989433e7a383Cb313953e4c2365107dc19a7`](https://katanascan.com/address/0x9893989433e7a383Cb313953e4c2365107dc19a7)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee`](https://etherscan.io/address/0xcd5fe23c85820f7b72d0926fc9b05b43e359b7ee)
+
 ### Function signatures
 
 ```

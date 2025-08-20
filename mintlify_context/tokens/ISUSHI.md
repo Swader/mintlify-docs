@@ -17,6 +17,10 @@ description: "ISUSHI: Interface for Bridge-wrapped SUSHI (SUSHI) on Katana (SUSH
 
 - **katana**: [`0x17BFF452dae47e07CeA877Ff0E1aba17eB62b0aB`](https://katanascan.com/address/0x17BFF452dae47e07CeA877Ff0E1aba17eB62b0aB)
 
+### Origin addresses
+
+- **katana**: ethereum (katana) – [`0x6b3595068778dd592e39a122f4f5a5cf09c90fe2`](https://etherscan.io/address/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2)
+
 ### Function signatures
 
 ```
