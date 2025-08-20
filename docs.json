@@ -46,30 +46,35 @@
       {
         "tab": "Contracts",
         "pages": [
-          "mintlify_context/index",
-          "mintlify_context/IAgoraFaucet",
-          "mintlify_context/IBatchDistributor",
-          "mintlify_context/IBundler3",
-          "mintlify_context/ICreate2Deployer",
-          "mintlify_context/ICreateX",
-          "mintlify_context/IDeterministicDeploymentProxy",
-          "mintlify_context/IERC20",
-          "mintlify_context/IERC4337Common",
-          "mintlify_context/IERC4626",
-          "mintlify_context/IGnosisSafe",
-          "mintlify_context/IGnosisSafeL2",
-          "mintlify_context/ILxLyBridge",
-          "mintlify_context/IMulticall3",
-          "mintlify_context/IMultiSend",
-          "mintlify_context/IMultiSendCallOnly",
-          "mintlify_context/IPermit2",
-          "mintlify_context/IRIP7212",
-          "mintlify_context/ISafeExecutor",
-          "mintlify_context/ISushiRouter",
-          "mintlify_context/Multicall",
-          "mintlify_context/Multicall2"
+          "mintlify_context/index"
         ],
         "groups": [
+          {
+            "group": "utilities",
+            "pages": [
+              "mintlify_context/IAgoraFaucet",
+              "mintlify_context/IBatchDistributor",
+              "mintlify_context/IBundler3",
+              "mintlify_context/ICreate2Deployer",
+              "mintlify_context/ICreateX",
+              "mintlify_context/IDeterministicDeploymentProxy",
+              "mintlify_context/IERC20",
+              "mintlify_context/IERC4337Common",
+              "mintlify_context/IERC4626",
+              "mintlify_context/IGnosisSafe",
+              "mintlify_context/IGnosisSafeL2",
+              "mintlify_context/ILxLyBridge",
+              "mintlify_context/IMulticall3",
+              "mintlify_context/IMultiSend",
+              "mintlify_context/IMultiSendCallOnly",
+              "mintlify_context/IPermit2",
+              "mintlify_context/IRIP7212",
+              "mintlify_context/ISafeExecutor",
+              "mintlify_context/ISushiRouter",
+              "mintlify_context/Multicall",
+              "mintlify_context/Multicall2"
+            ]
+          },
           {
             "group": "morpho",
             "pages": [
