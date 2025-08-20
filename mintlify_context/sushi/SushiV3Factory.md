@@ -6,7 +6,7 @@ description: "ISushiV3Factory: Interface for SushiSwap V3 Factory contract (Fact
 ### Overview
 
 - **name**: SushiV3Factory
-- **path**: `ISushiV3Factory.sol`
+- **path**: `sushi/ISushiV3Factory.sol`
 - **context**: defi
 - **tags**: sushi, defi, amm, factory, v3
 - **title**: ISushiV3Factory
@@ -16,6 +16,7 @@ description: "ISushiV3Factory: Interface for SushiSwap V3 Factory contract (Fact
 ### Addresses
 
 - **tatara**: [`0x9B3336186a38E1b6c21955d112dbb0343Ee061eE`](https://explorer.tatara.katana.network/address/0x9B3336186a38E1b6c21955d112dbb0343Ee061eE)
+- **katana**: [`0x203e8740894c8955cB8950759876d7E7E45E04c1`](https://katanascan.com/address/0x203e8740894c8955cB8950759876d7E7E45E04c1)
 
 ### Function signatures
 

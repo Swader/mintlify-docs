@@ -15,7 +15,7 @@ description: "IAgoraFaucet: Interface for Agora test token faucet (Provides test
 
 ### Addresses
 
-- **tatara**: [`0xba804DF5c476E8EaeF87BF8085F295300ccE2a49`](https://explorer.tatara.katana.network/address/0xba804DF5c476E8EaeF87BF8085F295300ccE2a49)
+- **tatara**: [`0xd236c18D274E54FAccC3dd9DDA4b27965a73ee6C`](https://explorer.tatara.katana.network/address/0xd236c18D274E54FAccC3dd9DDA4b27965a73ee6C)
 
 ### Function signatures
 

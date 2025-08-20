@@ -1,17 +1,18 @@
 ---
 title: "SushiV3PositionManager"
-description: "Documentation for SushiV3PositionManager at ISushiV3PositionManager.sol"
+description: "Documentation for SushiV3PositionManager at sushi/ISushiV3PositionManager.sol"
 ---
 
 ### Overview
 
 - **name**: SushiV3PositionManager
-- **path**: `ISushiV3PositionManager.sol`
+- **path**: `sushi/ISushiV3PositionManager.sol`
 - **context**: general
 
 ### Addresses
 
 - **tatara**: [`0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C`](https://explorer.tatara.katana.network/address/0x1400feFD6F9b897970f00Df6237Ff2B8b27Dc82C)
+- **katana**: [`0x2659c6085d26144117d904c46b48b6d180393d27`](https://katanascan.com/address/0x2659c6085d26144117d904c46b48b6d180393d27)
 
 ### Function signatures
 

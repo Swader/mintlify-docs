@@ -16,6 +16,7 @@ description: "IAUSD: Interface for Agora USD (AUSD), the stablecoin on Katana (A
 ### Addresses
 
 - **tatara**: [`0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC`](https://explorer.tatara.katana.network/address/0xa9012a055bd4e0eDfF8Ce09f960291C09D5322dC)
+- **katana**: [`0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a`](https://katanascan.com/address/0x00000000eFE302BEAA2b3e6e1b18d08D69a9012a)
 
 ### Function signatures
 
