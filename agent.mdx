@@ -1,0 +1,177 @@
+---
+title: "Agent guidance for resolving contract and token names"
+description: "Heuristics, synonyms, and search strategy to map user queries (e.g., WETH) to the correct interfaces and related contracts in this documentation set."
+---
+
+<Info>
+This page is written for automated agents. It defines a deterministic process to find the right contract/interface files and related context across `mintlify_context/` when given an asset, protocol, or contract query.
+</Info>
+
+## Objectives
+
+- **Normalize a user query** (e.g., "WETH", "weth", "wstETH") to a set of canonical candidates
+- **Locate the primary interfaces** under `mintlify_context/`
+- **Surface related wrappers and bridged/vault tokens** (e.g., `vb*`, `bvb*` variants)
+- **Offer adjacent resources** (e.g., price oracles) for the same asset symbol
+- **Warn about likely pitfalls** (case, prefixes, ambiguous aliases)
+
+## Directory map and naming patterns
+
+- **Base/asset tokens**: `mintlify_context/tokens/`
+  - Filenames follow the pattern `I<Symbol>.md` or vendor-form names like `IweETH.md`, `IwstETH.md`, `IAUSD.md`, `ISUSHI.md`, `IYFI.md`, `IPOL.md`, `IKAT.md`, etc.
+- **Vault/bridge tokens**: `mintlify_context/vb/tokens/`
+  - Primary pattern: `Ivb<Symbol>.md` (e.g., `IvbETH.md`, `IvbUSDC.md`, `IvbUSDT.md`, `IvbWBTC.md`, `IvbUSDS.md`).
+  - Also present: `Ibvb<Symbol>.md` (e.g., `IbvbEth.md`, `IbvbUSDC.md`, `IbvbUSDT.md`, `IbvbWBTC.md`, `IbvbUSDS.md`). Treat `vb` and `bvb` variants as equivalent wrappers over the base symbol.
+- **Price oracles**: `mintlify_context/oracles/chainlink/` and `mintlify_context/oracles/redstone/`
+  - Common patterns:
+    - `I<Symbol>USDOracle.md` (e.g., `IUSDCUSDOracle.md`, `IWBTCUSDOracle.md`, `IYFIUSDOracle.md`)
+    - Cross-asset oracles such as `ILBTCBTCOracle.md`, `IwstETHETHOracle.md`, `IweETHETHOracle.md`
+
+<Tip>
+All interface files begin with an `I` (e.g., `IvbETH.md`). Normalize search candidates by prepending `I` before matching filenames.
+</Tip>
+
+## Normalization and candidate generation
+
+Apply these rules to any incoming query to produce candidates:
+
+1. **Trim and case-normalize**: Convert to upper/lower variants without losing meaningful vendor prefixes. Examples: `WETH`, `weETH`, `wstETH`, `USDC`, `WBTC`.
+2. **Split vendor prefixes**: Recognize known wrappers/prefixes and the base symbol:
+   - `w*` (wrapped), `we*` (e.g., `weETH`), `wst*` (e.g., `wstETH`)
+   - `vb*` and `bvb*` (vault/bridge wrappers) → base symbol remains after the prefix
+   - Other observed prefixes: `u*` (e.g., `uBTC`, `uSOL`, `uSUI`), ecosystem/vendor names (e.g., `JitoSOL`)
+3. **Generate filename candidates** in this order:
+   - Token interfaces: `I<Symbol>.md`, `I<vendorSymbol>.md` (e.g., `IweETH.md`, `IwstETH.md`)
+   - Vault/bridge: `Ivb<Symbol>.md`, `Ibvb<Symbol>.md` (case-tolerant for `ETH` vs `Eth`)
+   - Oracles: `I<Symbol>USDOracle.md`, `I<Symbol><Quote>Oracle.md` as applicable
+4. **De-duplicate** candidates and proceed with the search order below.
+
+## Deterministic search order
+
+<Steps>
+<Step title="Check base token interfaces (tokens/)">
+Look for matches in `mintlify_context/tokens/`:
+
+- Direct symbol: `I<Symbol>.md` (if it exists)
+- Vendor forms: `IweETH.md`, `IwstETH.md`, `IAUSD.md`, `ISUSHI.md`, `IYFI.md`, `IPOL.md`, etc.
+
+<Check>
+If found, present it as a primary match and continue to related wrappers.
+</Check>
+</Step>
+
+<Step title="Check vault/bridge wrappers (vb/tokens/)">
+Search `mintlify_context/vb/tokens/` for the base symbol:
+
+- Preferred: `Ivb<Symbol>.md`
+- Also: `Ibvb<Symbol>.md` (treat `vb` and `bvb` variants as equivalent during search, but note that vb refers to the origin chain asset, and bvb to the bridged vault-bridge version)
+
+Always surface these as related assets when the user asks about the base symbol.
+</Step>
+
+<Step title="Check oracles for the same symbol">
+Search `mintlify_context/oracles/chainlink/` and `mintlify_context/oracles/redstone/`:
+
+- `I<Symbol>USDOracle.md` where `<Symbol>` is the asset (e.g., `IWBTCUSDOracle.md`)
+- Cross-asset pairs (e.g., `IwstETHETHOracle.md`, `IweETHETHOracle.md`, `ILBTCBTCOracle.md`)
+
+Include these as adjacent resources for pricing and market data.
+</Step>
+
+<Step title="Search adjacent verticals if relevant">
+If the query includes protocol/vendor hints (e.g., Sushi, Yearn, AggLayer, Morpho), also check:
+
+- `mintlify_context/sushi/`
+- `mintlify_context/yearn/`
+- `mintlify_context/agglayer/`
+- `mintlify_context/morpho/`
+</Step>
+</Steps>
+
+## Synonym and alias guidance
+
+- **WETH-related**:
+  - Base concept: ETH wrapped variants may appear as `WETH` (generic), `weETH`, or `wstETH`. These are distinct assets but often requested together.
+  - Vault/bridge wrappers: look for `IvbETH.md` and `IbvbEth.md` under `vb/tokens/` when the query is about WETH/ETH.
+  - Present both base/vendor tokens (e.g., `IweETH.md`, `IwstETH.md`) and wrapper tokens (`IvbETH.md`, `IbvbEth.md`) as related, clearly labeled.
+- **WBTC-related**:
+  - Base token and wrappers: `IvbWBTC.md`, `IbvbWBTC.md`; price oracles: `IWBTCUSDOracle.md`, `IWBTCBTCOracle.md`.
+- **Stablecoins (USDC, USDT, USDS, AUSD)**:
+  - USDC: `IvbUSDC.md`, `IbvbUSDC.md`, `IUSDCUSDOracle.md`
+  - USDT: `IvbUSDT.md`, `IbvbUSDT.md`, `IUSDTUSDOracle.md`
+  - USDS: `IvbUSDS.md`, `IbvbUSDS.md`, `IUSDSUSDOracle.md`
+  - AUSD: `IAUSD.md`, `IAUSDUSDOracle.md`
+- **Other examples**:
+  - YFI: `IYFI.md`, `IYFIUSDOracle.md`
+  - POL (Polygon): `IPOL.md`, `IPOLUSDOracle.md`
+  - LSTs: `IwstETH.md`, `IweETH.md`, with corresponding `...ETHOracle.md`
+  - u-prefixed tokens: `IuBTC.md`, `IuSOL.md`, `IuSUI.md` → treat `u*` as part of the symbol, not the vb/bvb family.
+
+<Warning>
+Do not assume vendor forms like `weETH` or `wstETH` are interchangeable with `WETH`. They are distinct assets. Present them as related, not identical.
+</Warning>
+
+## Pitfalls to avoid
+
+- **Case variance**: Some files use `ETH` vs `Eth` (e.g., `IbvbEth.md`). Perform case-insensitive matching and present the exact file path.
+- **Prefix collisions**: `w*`/`we*`/`wst*` vs `vb*`/`bvb*` serve different purposes. Do not conflate them.
+- **Ambiguous aliases**: `LBTC` vs `WBTC` vs `BTCK` are not interchangeable. Use oracles and directory context to disambiguate.
+- **Symbol vs protocol**: Queries like "Morpho" or "Sushi" are protocols; search those subdirectories first before token directories.
+- **Interface prefix**: All interface docs begin with `I`. Remember to prepend `I` when forming filename candidates.
+
+## Example: resolving a WETH query
+
+<AccordionGroup>
+<Accordion title="Candidate generation">
+- Input: "WETH"
+- Normalize: base symbol `ETH`; include vendor/wrapped variants: `WETH`, `weETH`, `wstETH`
+- Candidates:
+  - tokens/: `IweETH.md`, `IwstETH.md` (no `IWETH.md` present in tokens)
+  - vb/tokens/: `IvbETH.md`, `IbvbEth.md`
+  - oracles/: `IweETHETHOracle.md`, `IwstETHETHOracle.md` (and any `IETHUSDOracle.md` if present)
+</Accordion>
+
+<Accordion title="What to present">
+Present as:
+
+1) Primary related wrappers for the base ETH family
+```json
+{
+  "wrappers": [
+    { "name": "IvbETH", "path": "mintlify_context/vb/tokens/IvbETH.md" },
+    { "name": "IbvbEth", "path": "mintlify_context/vb/tokens/IbvbEth.md" }
+  ],
+  "vendor_tokens": [
+    { "name": "IweETH", "path": "mintlify_context/tokens/IweETH.md" },
+    { "name": "IwstETH", "path": "mintlify_context/tokens/IwstETH.md" }
+  ],
+  "oracles": [
+    { "name": "IweETHETHOracle", "path": "mintlify_context/oracles/chainlink/IweETHETHOracle.md" },
+    { "name": "IwstETHETHOracle", "path": "mintlify_context/oracles/chainlink/IwstETHETHOracle.md" }
+  ]
+}
+```
+
+Make clear that `weETH`/`wstETH` are distinct assets from generic `WETH`, but are commonly adjacent in queries about wrapped ETH.
+</Accordion>
+</AccordionGroup>
+
+## Example: resolving a WBTC query
+
+- tokens/: (base interfaces may not exist for `IWBTC.md` here)
+- vb/tokens/: `IvbWBTC.md`, `IbvbWBTC.md`
+- oracles/: `IWBTCUSDOracle.md`, `IWBTCBTCOracle.md`
+
+Present vb/bvb wrappers as primary related interfaces and include oracle docs for pricing context.
+
+## Output requirements for agents
+
+- **Always include exact file paths** and interface names you found.
+- **Group results** into: primary match(es), wrappers (vb/bvb), vendor tokens, oracles, and adjacent protocol docs.
+- **Call out ambiguities** explicitly in prose when similar assets exist.
+- **Do not overstate equivalence**: where assets are related but distinct, label them as such.
+
+<Check>
+If you followed the steps above, your results will be consistent and reproducible for any token or protocol query in this repository.
+</Check>
+
