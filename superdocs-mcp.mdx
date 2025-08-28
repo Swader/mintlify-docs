@@ -1,0 +1,65 @@
+---
+title: "Superdocs MCP"
+description: "Connecting superdocs to your LLM"
+---
+
+You can connect your LLM like Warp, Cursor, Claude Code and others to these docs
+by providing the LLM with a remote MCP connection.
+
+In your LLM setup, use the URL https://superdocs.katana.tools/mcp for the MCP server.
+
+### Cursor
+
+```json{
+  "mcpServers": {
+    "Superdocs": {
+      "url": "https://superdocs.katana.tools/mcp"
+    }
+  }
+}
+```
+
+### Claude Code
+
+```bash
+claude mcp add --transport http Superdocs https://superdocs.katana.tools/mcp
+```
+
+### VS Code
+
+Create `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "Superdocs": {
+      "type": "http",
+      "url": "https://superdocs.katana.tools/mcp"
+    }
+  }
+}
+```
+
+### Warp
+
+In MCP servers, add a new server with the json:
+
+```json{
+  "Superdocs": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://superdocs.katana.tools/mcp"
+    ],
+    "env": {},
+    "working_directory": null
+  }
+}
+```
+
+## Usage
+
+You can now ask your LLM about things searchable in the docs:
+
+![Warp finding WETH information from Superdocs](/images/warp-superdocs.png)

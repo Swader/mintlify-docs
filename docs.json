@@ -44,7 +44,7 @@
         "tab": "Katana and AI",
         "groups": [
           {"group": "AI tools","pages": [
-            
+            "superdocs-mcp",
             "warp",
             "cursor"
           ]}
