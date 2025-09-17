@@ -52,6 +52,14 @@
         ]
       },
       {
+        "tab": "Fork and build",
+        "groups": [
+          {"group": "Forkable examples","pages": [
+            "forkable-examples"
+          ]}
+        ]
+      },
+      {
         "tab": "Contracts",
         "pages": [
           "mintlify_context/index"

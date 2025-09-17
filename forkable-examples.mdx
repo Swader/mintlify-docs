@@ -1,0 +1,72 @@
+---
+title: "Forkable Examples"
+description: "Forkable examples of Katana primitives"
+---
+
+
+<Info>
+These examples ship with the SpecialK starter kit. The fork command below is a small utility that swaps the demo app with the selected example so it’s ready to build, run, and hack on immediately.
+</Info>
+
+## Pick an example
+
+<CardGroup cols={1}>
+<Card title="Wrapping" icon="rocket" href="#wrapping">
+  A simple example of wrapping and unwrapping Eth into Katana-based WETH.
+</Card>
+</CardGroup>
+
+## Wrapping
+
+Use this example to learn the minimal flow for converting native ETH into Katana-based WETH and back.
+
+<Steps>
+<Step title="Fork and build the example">
+  Click the button to copy the command, then paste it into your terminal in the SpecialK project root.
+
+  <div style={{ marginTop: 12, marginBottom: 12 }}>
+    <button
+      onClick={(e) => {
+        navigator.clipboard.writeText("PHONEHOME_META='{\"example\":\"wrapping\"}' bun run fork wrapping --yes");
+        const el = e.currentTarget;
+        const original = el.innerText;
+        el.innerText = 'Copied!';
+        setTimeout(() => (el.innerText = original), 1500);
+      }}
+      aria-label="Copy fork-and-build command for Wrapping example"
+      className="px-4 py-2 rounded-md bg-black text-white dark:bg-white dark:text-black font-medium"
+    >
+      Fork and build
+    </button>
+  </div>
+
+  Or run it manually:
+
+  ```bash
+  PHONEHOME_META='{"example":"wrapping"}' bun run fork wrapping --yes
+  ```
+
+  <Check>
+  After running, your workspace contains the Wrapping example in place of the demo app and is ready to develop.
+  </Check>
+
+  <Warning>
+  The fork utility replaces the demo app files in your working directory. Commit or stash any local changes before running.
+  </Warning>
+</Step>
+
+<Step title="What the fork utility does">
+  - **Swap demo for example**: Replaces the default demo with the selected example’s source.
+  - **Prepare to build**: Ensures the example is laid out to build and run with minimal setup.
+  - **Keep you moving**: Meant for quick iteration—fork, run, and start hacking.
+  
+  <Tip>
+  You can re-run the fork command to switch to a different example at any time.
+  </Tip>
+</Step>
+</Steps>
+
+<Info>
+Need help mapping assets like WETH vs weETH/wstETH across interfaces and wrappers? See the agent guidance for deterministic lookup and naming best practices: [Agent guidance for resolving contract and token names](/agent).
+</Info>
+
