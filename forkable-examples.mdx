@@ -25,7 +25,7 @@ Use this example to learn the minimal flow for converting native ETH into Katana
   Click the button to copy the command, then paste it into your terminal in the SpecialK project root.
 
   <div style={{ marginTop: 12, marginBottom: 12 }}>
-    <button
+    <button id="fork-and-build-wrapping"
       onClick={(e) => {
         navigator.clipboard.writeText("PHONEHOME_META='{\"example\":\"wrapping\"}' bun run fork wrapping --yes");
         const el = e.currentTarget;
