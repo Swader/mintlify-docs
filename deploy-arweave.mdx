@@ -1,0 +1,130 @@
+---
+title: "Deploy your app to Arweave Name System (ArNS)"
+description: "Automate deploying of your decentralized app to the Arweave Name System (ArNS)"
+---
+
+The [starter kit](/quickstart) comes with support for hosting sites on the
+[Arweave Name System (ArNS)](ar.io/arns).
+
+## What is the Arweave Name System?
+
+ArNS domains are smart domains provided by AR.IO Network which allow you to
+associate any Arweave transaction ID with a human readable domain that is
+accessible as a subdomain of any gateway in the AR.IO Network.
+
+For example, the ArNS domains app itself is deployed to ArNS:
+
+- [arns.ar.io](https://arns.ar.io)
+- [arns.arweave.net](https://arns.arweave.net)
+- [arns.permagate.io](https://arns.permagate.io)
+
+The same app is available on multiple gateways.
+
+You can access the same permanent site deployment as a subdomain on any of the
+(currently) over 600 active gateways in the network. You can see the full list
+of active gateways in the [network dashboard](https://gateways.ar.io).
+
+This means you pay once to store your app and in return get free permanent
+hosting with unlimited availability and high censorship resistance given the
+globally distributed and independent nature of the gateway network.
+
+The only constraint is that your site must be client side (similar to IPFS).
+Even if you have some back end components, following the principles of
+[Progressive Centralization](https://www.youtube.com/watch?v=ZkL5xuNVAS4), your
+should always strive to make your front end as decentralized as possible.
+
+## Getting started
+
+ArNS support is provided via a CLI tool called
+[permaweb-deploy](https://github.com/permaweb/permaweb-deploy) and a GitHub
+Workflow that will deploy your site to ArNS on each push to your main branch.
+
+This setup handles uploading your build folder to Arweave using
+[Turbo](https://docs.ardrive.io/docs/turbo/what-is-turbo.html), creating a
+[manifest](https://docs.ar.io/concepts/manifests), and then updating your ArNS
+name to point to your new manifest.
+
+It has built-in support for EVM wallet signatures so the wallet you're using for
+Katana should work fine.
+
+Before the workflow will work you must fund your wallet to pay for uploads and
+purchase an ArNS name.
+
+### Funding your wallet
+
+Turbo has a [friendly topup page](https://turbo-topup.com/). Head to this page,
+connect your wallet and top-up with either credit card or ETH (on mainnet).
+
+This will associate a credit balance with your wallet that can be used to fund
+the upload of your site data to Arweave and purchasing an ArNS name.
+
+### Purchase an Arweave Name System (ArNS) name
+
+Head to the [ArNS app](https://arns.app/#/?search=) to purchase a name.
+
+The ArNS supports purchasing with fiat (credit card via stripe), turbo credits
+or [ARIO tokens](ar.io/token). ArNS names can be leased or bought permanently.
+
+> **NOTE** - You can use the same credit balance to pay for uploads and ArNS
+> names. The wallet you use to pay for uploads must also be the owner of the
+> ArNS name.
+
+### Update the `deploy:arweave` command
+
+The starter kit contains the deploy command in `package.json`:
+
+```json
+"deploy:arweave": "bun run build:all && permaweb-deploy --arns-name <ARNS_NAME> --sig-key ethereum
+```
+
+Update this command with the ArNS name you purchased in the last step
+
+```json
+"deploy:arweave": "bun run build:all && permaweb-deploy --arns-name specialK --sig-key ethereum
+```
+
+## Automated deployment via GitHub Actions
+
+For permaweb deploy to work you must provide the private keys for your wallet.
+
+1. Export your private keys
+2. Store as GitHub Secret with value `DEPLOY_KEY`
+
+Follow this guide on how to
+[export your private keys from MetaMask](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/#:~:text=Click%20the%20three%20vertical%20dots,private%20key%20to%20your%20clipboard).
+
+### Push changes to your `main` branch
+
+If you followed the steps above correctly, every time you push to your `main`
+branch, the GitHub workflow will automatically:
+
+1. Upload only the changed files to Arweave and return a TxID
+2. Update your ArNS name to point to this TxID
+
+You will now be able to view your website at `yourarnsname.ar.io` (or any other
+gateway in the network).
+
+## Using AR.IO Network testnet with ArNS
+
+If you'd prefer to test your deployment to ArNS, AR.IO Network provides testnet
+support for doing so.
+
+1. Request tokens for your wallet from the [ARIO faucet](https://faucet.ar.io/).
+2. Follow the "Using arns.app with Testnet" instructions in [this guide](https://docs.ar.io/guides/testnet#using-arnsapp-with-testnet).
+3. Add `--ario-process testnet` to the end of the `deploy:arweave` command in
+   your `package.json`
+
+## Manual deployment
+
+If you want to manually trigger a deploy, you can invoke the deploy command with
+
+```bash
+bun run deploy:arweave
+```
+
+Make sure you provide your private key as an environment variable - if it's not
+already exposed, you can expose it before running the command like so:
+
+```bash
+DEPLOY_KEY=0xsomehash bun run deploy:arweave
+```

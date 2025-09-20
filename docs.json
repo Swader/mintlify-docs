@@ -22,7 +22,12 @@
               "network-information",
               "testnet-tokens"
             ]
-          },   
+          }, {
+            "group": "Deploying",
+            "pages": [
+              "deploy-arweave"
+            ]
+          },  
           {
             "group": "Ninja",
             "hidden": true,
