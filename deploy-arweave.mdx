@@ -4,7 +4,7 @@ description: "Automate deploying of your decentralized app to the Arweave Name S
 ---
 
 The [starter kit](/quickstart) comes with support for hosting sites on the
-[Arweave Name System (ArNS)](ar.io/arns).
+[Arweave Name System (ArNS)](https://ar.io/arns).
 
 ## What is the Arweave Name System?
 
@@ -30,7 +30,7 @@ globally distributed and independent nature of the gateway network.
 
 The only constraint is that your site must be client side (similar to IPFS).
 Even if you have some back end components, following the principles of
-[Progressive Centralization](https://www.youtube.com/watch?v=ZkL5xuNVAS4), your
+[Progressive Centralization](https://www.youtube.com/watch?v=ZkL5xuNVAS4), you
 should always strive to make your front end as decentralized as possible.
 
 ## Getting started
@@ -52,7 +52,7 @@ purchase an ArNS name.
 
 ### Funding your wallet
 
-Turbo has a [friendly topup page](https://turbo-topup.com/). Head to this page,
+Turbo has a [friendly top-up page](https://turbo-topup.com/). Head to this page,
 connect your wallet and top-up with either credit card or ETH (on mainnet).
 
 This will associate a credit balance with your wallet that can be used to fund
@@ -62,8 +62,8 @@ the upload of your site data to Arweave and purchasing an ArNS name.
 
 Head to the [ArNS app](https://arns.app/#/?search=) to purchase a name.
 
-The ArNS supports purchasing with fiat (credit card via stripe), turbo credits
-or [ARIO tokens](ar.io/token). ArNS names can be leased or bought permanently.
+The ArNS supports purchasing with fiat (credit card via Stripe), turbo credits
+or [ARIO tokens](https://ar.io/token). ArNS names can be leased or bought permanently.
 
 > **NOTE** - You can use the same credit balance to pay for uploads and ArNS
 > names. The wallet you use to pay for uploads must also be the owner of the
@@ -74,14 +74,13 @@ or [ARIO tokens](ar.io/token). ArNS names can be leased or bought permanently.
 The starter kit contains the deploy command in `package.json`:
 
 ```json
-"deploy:arweave": "bun run build:all && permaweb-deploy --arns-name <ARNS_NAME> --sig-key ethereum
+"deploy:arweave": "bun run build:all && permaweb-deploy --arns-name $ARNS_NAME --sig-key ethereum"
 ```
 
-Update this command with the ArNS name you purchased in the last step
-
-```json
-"deploy:arweave": "bun run build:all && permaweb-deploy --arns-name specialK --sig-key ethereum
-```
+Add this as an
+[environment variable](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-variables)
+in the project settings of your GitHub repo, so that this value gets
+interpolated during build time.
 
 ## Automated deployment via GitHub Actions
 
@@ -126,5 +125,5 @@ Make sure you provide your private key as an environment variable - if it's not
 already exposed, you can expose it before running the command like so:
 
 ```bash
-DEPLOY_KEY=0xsomehash bun run deploy:arweave
+DEPLOY_KEY=0xsomehash ARNS_NAME=myname bun run deploy:arweave
 ```
